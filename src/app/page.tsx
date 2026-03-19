@@ -26,7 +26,9 @@ const locationData = [
       { name: "Lewisham", slug: "lewisham", postcode: "SE13" },
       { name: "Stratford", slug: "stratford", postcode: "E15" },
       { name: "Camden", slug: "camden", postcode: "NW1" },
-      { name: "Richmond", slug: "richmond", postcode: "TW9" }
+      { name: "Richmond", slug: "richmond", postcode: "TW9" },
+      { name: "Greenwich", slug: "greenwich", postcode: "SE10" },
+      { name: "Westcombe Park", slug: "westcombe-park", postcode: "SE3" }
     ]
   },
   {
@@ -38,8 +40,7 @@ const locationData = [
       { name: "Bolton", slug: "bolton", postcode: "BL1" },
       { name: "Oldham", slug: "oldham", postcode: "OL1" },
       { name: "Stockport", slug: "stockport", postcode: "SK1" },
-      { name: "Wigan", slug: "wigan", postcode: "WN1" },
-      { name: "Trafford", slug: "trafford", postcode: "M32" }
+      { name: "Wigan", slug: "wigan", postcode: "WN1" }
     ]
   },
   {
@@ -50,8 +51,7 @@ const locationData = [
       { name: "Bradford", slug: "bradford", postcode: "BD1" },
       { name: "Wakefield", slug: "wakefield", postcode: "WF1" },
       { name: "Huddersfield", slug: "huddersfield", postcode: "HD1" },
-      { name: "Halifax", slug: "halifax", postcode: "HX1" },
-      { name: "Dewsbury", slug: "dewsbury", postcode: "WF12" }
+      { name: "Halifax", slug: "halifax", postcode: "HX1" }
     ]
   },
   {
@@ -62,7 +62,6 @@ const locationData = [
       { name: "Coventry", slug: "coventry", postcode: "CV1" },
       { name: "Wolverhampton", slug: "wolverhampton", postcode: "WV1" },
       { name: "Solihull", slug: "solihull", postcode: "B91" },
-      { name: "Sutton Coldfield", slug: "sutton-coldfield", postcode: "B72" },
       { name: "Walsall", slug: "walsall", postcode: "WS1" }
     ]
   },
@@ -74,7 +73,6 @@ const locationData = [
       { name: "Birkenhead", slug: "birkenhead", postcode: "CH41" },
       { name: "St Helens", slug: "st-helens", postcode: "WA10" },
       { name: "Southport", slug: "southport", postcode: "PR8" },
-      { name: "Wirral", slug: "wirral", postcode: "CH62" },
       { name: "Bootle", slug: "bootle", postcode: "L20" }
     ]
   },
@@ -108,8 +106,7 @@ const locationData = [
       { name: "Canterbury", slug: "canterbury", postcode: "CT1" },
       { name: "Dover", slug: "dover", postcode: "CT16" },
       { name: "Tunbridge Wells", slug: "tunbridge-wells", postcode: "TN1" },
-      { name: "Ashford", slug: "ashford", postcode: "TN23" },
-      { name: "Gravesend", slug: "gravesend", postcode: "DA11" }
+      { name: "Ashford", slug: "ashford", postcode: "TN23" }
     ]
   },
   {
@@ -120,8 +117,7 @@ const locationData = [
       { name: "Colchester", slug: "colchester", postcode: "CO1" },
       { name: "Southend-on-Sea", slug: "southend-on-sea", postcode: "SS0" },
       { name: "Basildon", slug: "basildon", postcode: "SS14" },
-      { name: "Harlow", slug: "harlow", postcode: "CM20" },
-      { name: "Brentwood", slug: "brentwood", postcode: "CM13" }
+      { name: "Harlow", slug: "harlow", postcode: "CM20" }
     ]
   },
   {
@@ -132,8 +128,7 @@ const locationData = [
       { name: "Portsmouth", slug: "portsmouth", postcode: "PO1" },
       { name: "Winchester", slug: "winchester", postcode: "SO23" },
       { name: "Basingstoke", slug: "basingstoke", postcode: "RG21" },
-      { name: "Fareham", slug: "fareham", postcode: "PO16" },
-      { name: "Andover", slug: "andover", postcode: "SP10" }
+      { name: "Fareham", slug: "fareham", postcode: "PO16" }
     ]
   },
   {
@@ -144,8 +139,7 @@ const locationData = [
       { name: "Blackburn", slug: "blackburn", postcode: "BB1" },
       { name: "Burnley", slug: "burnley", postcode: "BB11" },
       { name: "Lancaster", slug: "lancaster", postcode: "LA1" },
-      { name: "Blackpool", slug: "blackpool", postcode: "FY1" },
-      { name: "Chorley", slug: "chorley", postcode: "PR7" }
+      { name: "Blackpool", slug: "blackpool", postcode: "FY1" }
     ]
   },
   {
@@ -156,8 +150,7 @@ const locationData = [
       { name: "Woking", slug: "woking", postcode: "GU21" },
       { name: "Epsom", slug: "epsom", postcode: "KT17" },
       { name: "Farnham", slug: "farnham", postcode: "GU9" },
-      { name: "Redhill", slug: "redhill", postcode: "RH1" },
-      { name: "Staines", slug: "staines", postcode: "TW18" }
+      { name: "Redhill", slug: "redhill", postcode: "RH1" }
     ]
   },
   {
@@ -168,8 +161,7 @@ const locationData = [
       { name: "Watford", slug: "watford", postcode: "WD17" },
       { name: "Hemel Hempstead", slug: "hemel-hempstead", postcode: "HP1" },
       { name: "Stevenage", slug: "stevenage", postcode: "SG1" },
-      { name: "Hitchin", slug: "hitchin", postcode: "SG5" },
-      { name: "Hatfield", slug: "hatfield", postcode: "AL10" }
+      { name: "Hitchin", slug: "hitchin", postcode: "SG5" }
     ]
   },
   {
@@ -290,8 +282,7 @@ const locationData = [
       { name: "Slough", slug: "slough", postcode: "SL1" },
       { name: "Maidenhead", slug: "maidenhead", postcode: "SL6" },
       { name: "Bracknell", slug: "bracknell", postcode: "RG12" },
-      { name: "Windsor", slug: "windsor", postcode: "SL4" },
-      { name: "Newbury", slug: "newbury", postcode: "RG14" }
+      { name: "Windsor", slug: "windsor", postcode: "SL4" }
     ]
   },
   {
@@ -411,8 +402,8 @@ const locationData = [
       { name: "Aylesbury", slug: "aylesbury", postcode: "HP20" },
       { name: "Milton Keynes", slug: "milton-keynes", postcode: "MK1" },
       { name: "High Wycombe", slug: "high-wycombe", postcode: "HP11" },
-      { name: "Slough", slug: "slough-bucks", postcode: "SL1" },
-      { name: "Amersham", slug: "amersham", postcode: "HP6" }
+      { name: "Amersham", slug: "amersham", postcode: "HP6" },
+      { name: "Beaconsfield", slug: "beaconsfield", postcode: "HP9" }
     ]
   },
   {
@@ -492,293 +483,287 @@ const SITE_CONFIG = {
   keywordCapitalized: "Child Injury Claims",
   domain: "https://childinjuryclaims.co.uk",
   brandName: "Child Injury Claims",
-  serviceType: "Child Injury Claims Specialists",
-  phone: "0800 123 4567",
-  email: "claims@childinjuryclaims.co.uk"
+  serviceType: "Child Injury Claims",
+  email: "sleeuk89@gmail.com"
 }
 
 // ============================================================================
-// CONTENT GENERATORS
+// CONTENT GENERATORS - Competitor Style (No solicitors/lawyer/specialist)
 // ============================================================================
 
 const getHomepageContent = () => ({
-  title: "Child Injury Claims - No Win No Fee Compensation Specialists",
-  description: "Expert child injury claims specialists helping families across the UK claim compensation. No win no fee, free assessment, 98% success rate. Call today.",
-  h1: "Child Injury Claims - Expert Compensation Specialists",
+  title: "Child Injury Claims - No Win No Fee Compensation UK",
+  description: "Child injury claims help families across the UK claim compensation for injuries to children. No win no fee, free assessment. Get your claim assessed today.",
+  h1: "Child Injury Claims",
   sections: [
     {
       h2: "Who Can Make A Child Injury Claim?",
       content: [
-        "When a child suffers an injury due to someone else's negligence, the legal process for seeking compensation differs significantly from adult claims. In the United Kingdom, children under the age of 18 cannot bring a claim in their own name; instead, a parent, guardian, or other suitable adult must act as a 'litigation friend' to pursue the claim on their behalf. This legal representative makes decisions about the claim and ensures that the child's best interests are prioritised throughout the proceedings. The litigation friend works closely with solicitors to gather evidence, negotiate with insurance companies, and ultimately secure the compensation the injured child deserves.",
-        "The scope of who can be a litigation friend is quite broad under English law. Parents are the most common choice, but grandparents, older siblings, social workers, or any responsible adult with a genuine interest in the child's welfare can apply to the court for this role. The court must approve the appointment of a litigation friend to ensure they are suitable and have no conflicts of interest that might compromise the child's claim. This safeguard protects vulnerable children from exploitation and ensures that compensation settlements are genuinely in their best interests.",
-        "It is important to understand that the three-year limitation period for making a personal injury claim does not begin until the child reaches the age of 18. This means that a child has until their 21st birthday to bring a claim, even if the injury occurred when they were very young. However, it is generally advisable to pursue child injury claims as soon as possible after the incident, whilst evidence is fresh and witnesses can be located. Early resolution also ensures that compensation can be used for the child's care, rehabilitation, and educational needs during their developmental years."
+        `<a href="#home" class="text-[#f59e0b] underline font-medium">Child injury claims</a> can be made by a parent, guardian, or appropriate adult on behalf of any child who has suffered an injury due to someone else's negligence. This includes injuries sustained at school, in public places, on the road, or due to medical negligence. The claim is brought by a 'litigation friend' who acts in the child's best interests throughout the process.`,
+        "Claims can be submitted for children injured as pedestrians, passengers in vehicles, during supervised activities, or while lawfully present on someone else's property. Common claimants include children injured at school, nursery, playgrounds, or healthcare settings. The three-year limitation period does not begin until the child reaches 18 years of age.",
+        "Parents or guardians can submit claims on behalf of children under 18. Legal responsibility is established through negligence or breach of statutory duty. Evidence such as medical records, witness statements, and incident reports help support the assessment of liability and the value of the claim."
       ]
     },
     {
-      h2: "How Much Compensation Can I Claim For Child Injury Claims?",
+      h2: "How Much Compensation Can I Claim For A Child Injury?",
       content: [
-        "The amount of compensation available for child injury claims varies considerably depending on the severity and nature of the injury, its long-term impact on the child's life, and the circumstances surrounding the incident. Compensation is typically calculated using two main categories: general damages, which compensate for pain, suffering, and loss of amenity; and special damages, which cover financial losses such as medical expenses, travel costs, and future care needs. For serious injuries that affect a child's future earning capacity or require ongoing medical treatment, special damages can form a substantial portion of the overall award.",
-        "The Judicial College Guidelines provide a framework for assessing general damages in personal injury cases, including those involving children. For minor injuries such as sprains, bruises, or minor fractures, compensation might range from £1,000 to £10,000. More serious injuries, including significant fractures, scarring, or psychological trauma, could attract awards between £10,000 and £50,000. In cases involving catastrophic injuries such as brain damage, spinal cord injuries, or severe burns, compensation can reach several million pounds to account for lifetime care costs, adapted accommodation, and lost future earnings.",
-        "It is crucial that child injury claims are properly valued, as the court must approve any settlement to ensure it is in the child's best interests. Unlike adult claims where the claimant can accept any offer they choose, settlements for children require court approval at an infant approval hearing. The judge will examine the evidence, consider whether the settlement is reasonable, and determine how the compensation should be managed for the child's benefit. This typically involves investing the funds in the Court Funds Office until the child reaches 18, though earlier releases can be approved for specific needs such as educational expenses or medical treatment."
+        "Child injury claims can result in compensation ranging from £1,000 for minor injuries to over £500,000 for severe, life-changing injuries. Compensation is assessed based on the Judicial College Guidelines and includes general damages for pain, suffering, and loss of amenity, as well as special damages for financial losses.",
+        "Factors affecting potential compensation include the severity of the injury, the impact on the child's quality of life, any permanent disability or scarring, psychological trauma, and the effect on future education and employment prospects. Special damages may cover medical treatment, rehabilitation, care costs, and lost future earnings.",
+        "Claims are operated on a No Win, No Fee basis, subject to a success fee and insurance costs where applicable. This means there are no upfront costs, and fees are only deducted if the claim is successful. Contact us to get an estimate of your child injury claim value."
       ]
     },
     {
       h2: "What Are The Most Common Causes Of Child Injury Claims?",
       content: [
-        "Road traffic accidents represent one of the most common causes of child injury claims in the UK. Children are particularly vulnerable as pedestrians, cyclists, and passengers in vehicles. Whether struck by a car whilst crossing the road, injured as a passenger in a collision, or hurt in a cycling accident, children can suffer a wide range of injuries from minor whiplash to life-changing trauma. Driver negligence, including speeding, distracted driving, and failure to observe children near roads, often underlies these tragic incidents. The law recognises that children cannot be expected to exercise the same level of road safety awareness as adults, which can strengthen claims against negligent drivers.",
-        "Accidents at school and in educational settings form another significant category of child injury claims. Schools have a duty of care to protect pupils from foreseeable harm, whether during lessons, break times, sports activities, or school trips. Injuries can result from inadequate supervision, poorly maintained equipment, unsafe premises, or negligent teaching practices. PE and sports injuries, playground accidents, and incidents during science experiments are common scenarios. Educational institutions must carry out risk assessments and implement appropriate safety measures; failure to do so may constitute negligence giving rise to a compensation claim.",
-        "Medical negligence affecting children can have devastating and lifelong consequences. Birth injuries, including cerebral palsy caused by oxygen deprivation during delivery, misdiagnosis of childhood illnesses, surgical errors, and medication mistakes all fall within this category. Clinical negligence claims involving children are often complex and require expert medical evidence to establish that the standard of care fell below acceptable levels. The compensation in such cases can be substantial, reflecting the profound impact that medical errors can have on a child's entire life trajectory, including their need for ongoing care, assistance, and support."
+        "Child injury claims commonly arise from road traffic accidents, where children are injured as pedestrians, cyclists, or passengers. Negligent driving, failure to observe children near roads, and inadequate safety measures often contribute to these incidents. Children are particularly vulnerable in these situations due to their smaller size and limited awareness of road dangers.",
+        "School and nursery accidents represent another significant category, including playground injuries, sports accidents, inadequate supervision, and exposure to hazardous materials. Educational institutions have a duty of care to protect children in their charge, and breaches of this duty can lead to valid claims.",
+        "Medical negligence affecting children, including birth injuries, misdiagnosis, and surgical errors, can result in serious, lifelong consequences. Public place accidents, dog bites, and injuries from defective products also contribute to child injury statistics. Each case requires careful assessment to establish liability under applicable laws."
       ]
     },
     {
       h2: "How Do I Start A Child Injury Claim?",
       content: [
-        "The first step in pursuing a child injury claim is to seek specialist legal advice from solicitors experienced in handling children's compensation cases. Not all personal injury lawyers have expertise in this area, and the procedural requirements for child claims differ significantly from adult claims. A specialist solicitor will assess the circumstances of the injury, advise on the strength of the claim, and guide you through the process of becoming a litigation friend if you are not already acting in that capacity. They will also explain the funding options available, including no win no fee arrangements that protect families from financial risk.",
-        "Gathering evidence is a crucial early step in building a successful child injury claim. This includes obtaining medical records documenting the injury and treatment, collecting witness statements from anyone who saw the incident occur, securing CCTV footage if available, and preserving any physical evidence relevant to the case. Photographs of injuries, the accident location, and any defective equipment or hazardous conditions that contributed to the incident can be invaluable. Your solicitor will work with you to identify and secure all relevant evidence before it becomes unavailable or memories fade.",
-        "Once evidence has been gathered, your solicitor will prepare and send a letter of claim to the responsible party or their insurers, outlining the allegations of negligence and the injuries suffered. The defendant then has a fixed period to respond, either admitting or denying liability. If liability is admitted, negotiations can proceed towards settlement. If denied, your solicitor will advise on the prospects of success at trial and whether court proceedings should be issued. Throughout this process, the child's best interests remain paramount, and any settlement must be approved by the court to ensure it is fair and appropriate."
+        "To start a child injury claim, relevant evidence should be gathered including medical reports documenting the injury and treatment, photographs of visible injuries or the accident scene, witness statements from those who saw the incident, and any official reports such as police or school incident records.",
+        "The claim process begins with an assessment of the circumstances to determine if there are grounds for compensation. This includes reviewing the evidence, establishing who was at fault, and evaluating the extent of the child's injuries and their impact. The case can then be referred to appropriate legal representation to handle the claim.",
+        "Once the case is assessed, a letter of claim is sent to the responsible party or their insurers. The defendant has a fixed period to respond. If liability is admitted, negotiations proceed. If denied, further evidence may be gathered, and court proceedings may be issued. Compensation is sought through settlement or court action."
       ]
     },
     {
       h2: "How Long Do I Have To Make A Child Injury Claim?",
       content: [
-        "The limitation period for child injury claims operates differently from adult claims in a way that provides significant protection for injured children. Under the Limitation Act 1980, the standard three-year period for bringing a personal injury claim does not begin to run until the child reaches the age of 18. This means that a child injured at any point during their minority has until their 21st birthday to issue court proceedings. This extended timeframe recognises that children cannot reasonably be expected to understand and pursue their legal rights whilst they are still young.",
-        "Despite this generous limitation period, there are compelling reasons to pursue child injury claims promptly rather than waiting until the child approaches adulthood. Evidence deteriorates over time: witnesses may become difficult to locate, their memories may fade, and documents can be lost or destroyed. Furthermore, securing compensation early allows the funds to be used for the child's benefit during their developmental years, whether for private medical treatment, specialist educational support, or rehabilitation services that might not be available on the NHS. Early resolution also provides certainty and closure for families affected by the incident.",
-        "There are some circumstances where different limitation rules apply. For claims involving criminal injuries, an application to the Criminal Injuries Compensation Authority must generally be made within two years of the incident, regardless of the child's age. For claims against public bodies, there may be notice requirements that must be satisfied within shorter timeframes. Your solicitor will advise on the specific limitation periods applicable to your child's claim and ensure that all procedural requirements are met within the relevant deadlines."
+        "Child injury claims are subject to a three-year limitation period. However, this period does not begin until the child reaches 18 years of age. This means a child has until their 21st birthday to bring a claim, regardless of when the injury occurred during their childhood.",
+        "Claims made on behalf of children under 18 must be submitted by a parent or guardian acting as litigation friend. This allows families to pursue compensation promptly whilst the child is still young, ensuring that funds are available for treatment, rehabilitation, and educational needs during their developmental years.",
+        "If the injured person lacks mental capacity, there may be no time limit until capacity is regained. It is advisable to pursue claims as soon as possible after an incident whilst evidence is fresh and witnesses can be located. Early action often leads to better outcomes."
       ]
     },
     {
       h2: "What Evidence Is Required For A Child Injury Claim?",
       content: [
-        "Medical evidence forms the cornerstone of any child injury claim. Your solicitor will obtain copies of all medical records relating to the incident, including A&E notes, hospital admissions, GP records, and any specialist reports. In most cases, an independent medical expert will be instructed to prepare a report on the nature and extent of the child's injuries, their prognosis, and any ongoing treatment needs. This expert evidence is essential for valuing the claim accurately and ensuring that future needs are properly accounted for in any settlement.",
-        "Evidence of negligence must also be gathered to establish that the defendant breached their duty of care towards the child. The nature of this evidence will depend on the circumstances of the incident. For a road traffic accident, this might include the police accident report, witness statements from drivers and pedestrians, and forensic analysis of the collision. For a school accident, this could involve risk assessments, maintenance records, staff training logs, and evidence of previous similar incidents. Your solicitor will identify what evidence is needed and take steps to secure it.",
-        "Financial evidence is required to support any claim for special damages. This includes receipts for medical expenses, travel costs for attending appointments, costs of care provided by family members, and any other expenditure incurred as a result of the injury. For children with ongoing needs, expert evidence may be required to quantify future losses, including the cost of care, assistance, equipment, and adapted accommodation. This evidence helps ensure that the compensation recovered is sufficient to meet the child's needs throughout their life."
+        "Child injury claims require proof of injury and evidence establishing that someone else was at fault. Documentation should include medical records from hospitals, GPs, and any ongoing treatment providers, photographs of injuries taken at the time and during recovery, and witness statements from anyone who saw the incident occur.",
+        "Additional evidence may include school or nursery records, police reports for road traffic accidents or criminal incidents, expert medical reports on the prognosis and long-term impact, records of previous similar incidents, and evidence of financial losses such as travel costs and lost earnings for parents providing care.",
+        "Providing comprehensive evidence helps support the assessment of the claim and ensures a smoother process. The more documentation available, the stronger the case for establishing liability and calculating appropriate compensation. All evidence should be preserved and organised from the earliest opportunity."
       ]
     },
     {
       h2: "How Long Does A Child Injury Claim Take To Settle?",
       content: [
-        "The duration of a child injury claim depends on numerous factors, including the complexity of the case, the severity of the injuries, whether liability is disputed, and the child's prognosis. Straightforward claims where liability is admitted and injuries are relatively minor might settle within 6 to 12 months. More complex cases involving disputed liability, serious injuries, or the need for extensive expert evidence can take several years to resolve. Your solicitor will provide an estimated timeframe based on the specific circumstances of your child's case.",
-        "One factor that can extend the duration of child injury claims is the need to assess the long-term impact of injuries. For children who are still growing and developing, it may be necessary to wait until their condition has stabilised before a final settlement can be reached. Rushing to settlement before the full extent of the child's needs is known could result in under-compensation that cannot later be corrected. In such cases, interim payments may be obtained to meet immediate needs whilst the claim continues towards final resolution.",
-        "The court approval process adds an additional step to child injury settlements that does not apply to adult claims. Once a settlement is agreed between the parties, it must be approved by a judge at an infant approval hearing. The judge will review the evidence, ensure the settlement is in the child's best interests, and make directions for the management of the compensation funds. This process typically takes several weeks to arrange, but provides important protection for the child by ensuring that settlements are fair and appropriate."
+        "Child injury claims typically settle within 6 to 18 months when liability is admitted and medical evidence is complete. Straightforward cases with minor injuries and clear liability may be resolved more quickly, whilst complex cases involving serious injuries or disputed liability can take longer.",
+        "Complex cases involving serious injuries, disputed liability, or the need for long-term prognosis assessment may take over 24 months. For children with developing conditions, it may be necessary to wait until their condition has stabilised before finalising settlement to ensure all future needs are properly accounted for.",
+        "Claims involving urgent medical costs may qualify for interim payments before full settlement. This allows families to access treatment, rehabilitation, and support whilst the claim is ongoing. Settlements for children must be approved by the court to ensure they are fair and in the child's best interests."
       ]
     },
     {
       h2: "Claims Involving Uninsured Or Unknown Parties",
       content: [
-        "Child injury claims can present particular challenges when the responsible party is uninsured, untraceable, or unknown. In road traffic accidents involving uninsured or hit-and-run drivers, the Motor Insurers' Bureau (MIB) provides a scheme of last resort for compensating victims. Claims to the MIB must comply with strict procedural requirements and time limits, making early legal advice essential. The MIB will investigate the circumstances and may compensate the child if all criteria are met, though the process can be lengthy and complex.",
-        "For accidents on private land where the occupier is uninsured or insolvent, recovering compensation can be more difficult. However, there may be alternative sources of recovery, such as insurance policies held by the child's family, or schemes established by industry bodies. In some cases, local authorities or other public bodies may bear responsibility for failing to take enforcement action against known hazards. Your solicitor will explore all available avenues for recovering compensation on your child's behalf.",
-        "Criminal injuries represent another category where the perpetrator may be unknown or unable to pay compensation. The Criminal Injuries Compensation Authority (CICA) administers a government-funded scheme for compensating victims of violent crime, including children. Applications must generally be made within two years of the incident, and there is no requirement for the perpetrator to have been identified or prosecuted. Compensation under the CICA scheme is calculated according to a tariff system and may be lower than civil damages, but provides an important source of redress where no other remedy is available."
+        "Child injury claims are still possible if the responsible party is uninsured or unknown. In road traffic accident cases involving uninsured or hit-and-run drivers, compensation may be pursued through the Motor Insurers' Bureau (MIB), which provides a scheme of last resort for victims of uninsured motorists.",
+        "For incidents in public places or involving unidentified parties, claims can sometimes be pursued through local authorities, public liability insurance, or other statutory schemes. Evidence such as police reports, CCTV footage, and witness statements become particularly important in these cases to support the claim.",
+        "Claims involving unidentified parties must establish liability through available evidence and legal mechanisms. An assessment can help determine the best approach for pursuing compensation based on the specific circumstances of each case."
       ]
     },
     {
       h2: "What Damages Can Be Claimed?",
       content: [
-        "Child injury claims can recover both general damages and special damages. General damages compensate for pain, suffering, and loss of amenity - the non-financial impact of the injury on the child's life. This includes physical pain, emotional distress, and the inability to participate in activities they would otherwise have enjoyed. For children, particular consideration is given to the impact on their education, social development, and future prospects. The courts recognise that injuries sustained in childhood can shape a person's entire life trajectory, and compensation reflects this broader impact.",
-        "Special damages cover the financial losses incurred as a result of the injury. For children, this typically includes medical expenses not covered by the NHS, costs of private treatment or therapy, travel expenses for attending appointments, and the cost of equipment or aids needed due to the injury. If a parent has had to reduce their working hours or give up employment to care for an injured child, a claim can be made for their lost earnings. The cost of professional care, where needed, can also be recovered, whether provided by family members or external carers.",
-        "Future losses represent a particularly important category of damages in serious child injury claims. If the injury will affect the child throughout their life, compensation must account for their future needs. This includes ongoing medical treatment and therapy, care and assistance, specialist equipment, adapted accommodation, and transport. If the injury will affect the child's ability to work, a claim can be made for lost future earnings. Calculating these future losses requires expert evidence from medical professionals, care experts, and forensic accountants, and can result in substantial awards that are invested to provide for the child's lifetime needs."
+        "Child injury claims can include general damages for pain, suffering, and loss of amenity, as well as special damages for financial losses. General damages are assessed based on the nature and severity of the injury, its impact on the child's daily life, and any long-term consequences affecting their quality of life.",
+        "Special damages may include medical expenses for private treatment, rehabilitation costs, travel expenses for attending appointments, equipment and aids required due to the injury, care costs provided by family members or professionals, and educational support or therapy. Future losses such as ongoing care and lost future earnings can also be claimed.",
+        "The court must approve any settlement for a child to ensure it is fair and appropriate. Compensation is typically invested in the Court Funds Office until the child reaches 18, though early release can be approved for specific needs. This protects the child's interests and ensures funds are available for their future."
       ]
     },
     {
       h2: "No Win No Fee Explained",
       content: [
-        "No win no fee arrangements, formally known as Conditional Fee Agreements (CFAs), provide access to justice for families who could not otherwise afford to pursue a child injury claim. Under this arrangement, your solicitor agrees not to charge any fees if the claim is unsuccessful. If the claim succeeds, the solicitor receives their standard fees plus a success fee, which is capped by law at a percentage of those fees. This structure means that families can pursue legitimate claims without the risk of facing a legal bill they cannot afford if the case does not succeed.",
-        "To protect against the risk of having to pay the defendant's costs if the claim fails, After the Event (ATE) insurance is typically taken out as part of the no win no fee arrangement. This insurance covers the defendant's costs if the case is unsuccessful, and the premium is only payable if the claim succeeds. The cost of ATE insurance and the success fee are generally recoverable from the defendant as part of the costs in successful cases, meaning that the child retains the full amount of their compensation. Your solicitor will explain all costs and funding arrangements at the outset of the claim.",
-        "No win no fee arrangements have made legal representation accessible to families across the UK, regardless of their financial circumstances. This is particularly important for child injury claims, where the stakes are high and the legal process can be complex. By removing the financial barrier to pursuing justice, no win no fee arrangements ensure that children who have been injured through no fault of their own have the opportunity to obtain the compensation they need and deserve. When choosing a solicitor, ensure they have specific experience in child injury claims and clearly explain their fee structure."
+        "No Win, No Fee means you only pay if your claim is successful. There are no upfront legal costs to pay. If successful, a success fee capped at 25% of your damages, plus any agreed After the Event (ATE) insurance premium, may be deducted from your settlement.",
+        "This arrangement makes legal representation accessible to families regardless of their financial circumstances. It removes the financial risk of pursuing a claim, as no fees are payable if the claim is unsuccessful. The success fee reflects the risk taken by the legal team in handling the case.",
+        "ATE insurance protects against the risk of having to pay the defendant's costs if the claim fails. The premium for this insurance is typically only payable if the claim succeeds, and is often deducted from the settlement along with the success fee. This ensures families can pursue justice without financial worry."
       ]
     },
     {
       h2: "Why Choose Us For Your Child Injury Claim?",
       content: [
-        "Our specialist team has extensive experience handling child injury claims across the full spectrum of circumstances, from minor accidents at school to catastrophic injuries with lifelong consequences. We understand the sensitivity required when dealing with injured children and their families, and we approach every case with compassion, professionalism, and an unwavering commitment to achieving the best possible outcome. Our solicitors are experts in navigating the unique procedural requirements that apply to children's claims, including court approval of settlements and the appointment of litigation friends.",
-        "We have a proven track record of securing substantial compensation for injured children, with settlements ranging from thousands to millions of pounds depending on the severity of the injury. Our approach combines thorough preparation with strategic advocacy, ensuring that every aspect of the claim is properly evidenced and persuasively presented. We work with leading medical experts, care specialists, and forensic accountants to build compelling cases that secure the full compensation our young clients deserve. Our success rate of 98% speaks to the quality of our work and our dedication to each case.",
-        "Beyond the legal aspects, we provide holistic support to families navigating the aftermath of a child's injury. We can connect you with support services, rehabilitation providers, and educational specialists who can help your child recover and thrive. We understand that compensation is not just about money; it's about securing the resources your child needs to reach their full potential despite their injuries. By choosing us, you gain a partner who will fight tirelessly for your child's rights and future wellbeing."
+        "We help families across the UK pursue compensation for child injuries. Our experienced team manages the full process from initial assessment to final settlement, ensuring that each case is handled with care and attention to detail. We understand the challenges families face when a child has been injured.",
+        "We operate on a No Win, No Fee basis, meaning there are no upfront costs and no financial risk. Our service includes gathering evidence, assessing liability, calculating compensation, negotiating with insurers, and representing the child's interests throughout. We aim to achieve the best possible outcome for every client.",
+        "Contact us for a free, no-obligation assessment to see if we can assist you with your child injury claim. We can provide guidance on the claims process, likely timescales, and potential compensation values. Our team is ready to help you secure the compensation your child deserves."
       ]
     },
     {
       h2: "Areas We Cover",
       content: [
-        "We provide expert child injury claims services across the entire United Kingdom, with specialist solicitors based in offices throughout England, Scotland, Wales, and Northern Ireland. Whether you are located in a major city like London, Manchester, Birmingham, or Edinburgh, or in a smaller town or rural area, we can assist you with your child's compensation claim. Our national coverage means you can access specialist legal representation regardless of where the incident occurred or where you live.",
-        "Our solicitors have in-depth knowledge of local courts, medical facilities, and support services throughout the UK. This local expertise can be valuable in building your child's claim, as we can work with nearby medical experts for examinations and reports, and we understand the procedures and preferences of local courts. We have successfully handled child injury claims in every county of England and Wales, as well as throughout Scotland and Northern Ireland, giving us a breadth of experience that benefits every client we represent.",
-        "Distance is no barrier to accessing our services. We offer flexible consultation options including telephone calls, video conferences, and home visits where appropriate, ensuring that families in remote areas or those with mobility difficulties can access our expertise. We have invested in secure technology that allows us to manage claims efficiently and communicate effectively with clients throughout the UK. Wherever you are located, you will receive the same high standard of service and the same commitment to achieving the best possible outcome for your child."
+        "We provide child injury claims services across the entire United Kingdom, covering England, Scotland, Wales, and Northern Ireland. Whether you are in a major city, town, or rural area, we can assess your case and help you pursue compensation.",
+        "Our service covers all counties and regions, from Greater London and the South East to Scotland and Northern Ireland. We have experience handling claims from diverse locations and can connect you with appropriate representation wherever you are based.",
+        "Use the search function below or browse our areas covered to find your location. We can help with child injury claims throughout the UK, providing the same high standard of service regardless of where the incident occurred or where you are located."
       ]
     }
   ]
 })
 
 // Location page content generator
-const getLocationPageContent = (location: string, isCounty: boolean, countyData?: typeof locationData[0], townData?: { name: string; slug: string; postcode: string }) => ({
-  title: isCounty 
-    ? `Child Injury Claims in ${location} - Claim Compensation Today`
-    : `Child Injury Claims in ${location} - Claim Compensation After an Incident ${townData?.postcode || ''}`,
-  description: `Expert child injury claims specialists in ${location}. No win no fee compensation claims for injured children. Free assessment, 98% success rate. Call today.`,
-  h1: isCounty 
-    ? `Child Injury Claims in ${location} - Expert Local Specialists`
-    : `Child Injury Claims in ${location} ${townData?.postcode || ''} - Expert Compensation Advice`,
-  sections: [
-    {
-      h2: `Who Can Make A Child Injury Claim in ${location}?`,
-      content: [
-        `Families in ${location} who have children that have suffered injuries due to someone else's negligence have the right to pursue compensation through the legal system. When a child is injured in ${location}, whether through a road traffic accident, an incident at school, or any other negligent act, a parent, guardian, or responsible adult can act as a litigation friend to bring the claim on the child's behalf. This legal mechanism ensures that children in ${location} who cannot represent themselves still have access to justice and the compensation they deserve for their injuries and suffering.`,
-        `The role of litigation friend in ${location} child injury claims carries important responsibilities. The appointed individual must make decisions that are in the child's best interests throughout the claims process, working closely with solicitors to gather evidence, negotiate with insurance companies, and ultimately secure fair compensation. ${isCounty ? `Throughout ${location} and the surrounding areas` : `In ${location} and the broader ${countyData?.county || 'region'} area`}, our experienced legal team guides litigation friends through every step of this process, ensuring they understand their responsibilities and the options available for their child's claim.`,
-        `Children in ${location} benefit from special protection under the law regarding limitation periods. Unlike adults who have three years from the date of injury to bring a claim, children have until their 21st birthday. However, we strongly advise families in ${location} to pursue claims promptly after an incident occurs. Early action preserves evidence, allows witnesses to be located whilst memories are fresh, and ensures compensation can be obtained quickly to fund the child's recovery and any necessary treatment or support in ${location}.`
-      ]
-    },
-    {
-      h2: `How Much Compensation Can I Claim For Child Injury in ${location}?`,
-      content: [
-        `The compensation available for child injury claims in ${location} depends on the specific circumstances of each case, including the nature and severity of the injury, its impact on the child's life, and the long-term prognosis. Compensation is divided into general damages for pain, suffering, and loss of amenity, and special damages for financial losses. For families in ${location}, this can include everything from minor injuries resulting in compensation of a few thousand pounds to catastrophic injuries warranting awards of several million pounds to cover lifetime care and support needs.`,
-        `Special damages in ${location} child injury claims can encompass a wide range of financial losses. This includes medical expenses for private treatment in ${location} or elsewhere, travel costs to hospitals and rehabilitation centres, the cost of care provided by family members or professional carers, and any specialist equipment the child needs. If a parent in ${location} has had to reduce their working hours or leave employment to care for an injured child, these lost earnings can also be claimed. Future losses are particularly important in serious injury cases, accounting for the child's ongoing needs throughout their life.`,
-        `Settlements for children in ${location} must be approved by the court to ensure they are fair and in the child's best interests. This protection applies regardless of whether liability is admitted or disputed, and provides an important safeguard for injured children. At an infant approval hearing, a judge will examine the evidence and ensure the settlement adequately compensates the child for their injuries. The compensation is typically invested in the Court Funds Office until the child reaches 18, though earlier release can be approved for specific needs such as educational expenses or medical treatment in ${location}.`
-      ]
-    },
-    {
-      h2: `What Are The Most Common Causes Of Child Injury in ${location}?`,
-      content: [
-        `Road traffic accidents represent a significant cause of child injuries in ${location}, as in the rest of the UK. Children are particularly vulnerable as pedestrians, cyclists, and passengers, and the consequences can be devastating. ${isCounty ? `Throughout ${location}` : `In ${location}`}, negligent driving, failure to observe children near roads, and inadequate road safety measures can all contribute to accidents resulting in child injuries. Our legal team has extensive experience handling these claims, working to establish liability and secure compensation for affected families in ${location}.`,
-        `Accidents at schools and educational establishments in ${location} form another major category of child injury claims. ${isCounty ? `Schools across ${location}` : `Schools in ${location}`} have a duty of care to protect pupils, and failures in supervision, maintenance of equipment, or safety procedures can result in injuries. PE and sports accidents, playground incidents, and injuries during school trips all fall within this category. We work with families in ${location} to investigate school accidents, establish negligence, and pursue appropriate compensation for injured children.`,
-        `Medical negligence, public liability incidents, and accidents in public places in ${location} also contribute to child injury statistics. From misdiagnosis of childhood illnesses to injuries in parks, shops, or leisure facilities, these incidents can have serious consequences for children and their families. ${isCounty ? `Throughout ${location}, our solicitors` : `Our ${location} solicitors`} have experience handling all types of child injury claims and can advise on the merits of pursuing compensation in your specific circumstances. We offer free initial assessments to help families understand their options.`
-      ]
-    },
-    {
-      h2: `How Do I Start A Child Injury Claim in ${location}?`,
-      content: [
-        `Beginning a child injury claim in ${location} starts with obtaining specialist legal advice from solicitors experienced in children's compensation cases. Our ${location} team offers free initial consultations to assess your child's case and explain the options available. We will advise on the strength of the claim, the process of becoming a litigation friend, and the funding options including no win no fee arrangements. This initial advice helps families in ${location} make informed decisions about pursuing compensation without any financial commitment or obligation.`,
-        `Gathering evidence is the next crucial step in building a successful child injury claim in ${location}. This includes obtaining medical records from ${isCounty ? `hospitals and GPs in ${location}` : `local hospitals and GPs in ${location}`}, collecting witness statements, securing CCTV footage where available, and preserving any physical evidence relevant to the incident. Our solicitors in ${location} are skilled at identifying and securing evidence quickly, before it becomes unavailable. We work with medical experts and other specialists to build comprehensive evidence packages that support our clients' claims.`,
-        `Once the evidence is assembled, we prepare and send a formal letter of claim to the responsible party or their insurers, outlining the allegations of negligence and the injuries suffered. ${isCounty ? `Defendants in ${location} and beyond` : `Defendants`} have a fixed period to respond, after which negotiations can proceed or court proceedings may be issued. Throughout this process, our ${location} team keeps clients informed of progress and provides clear advice on all decisions that need to be made, always keeping the child's best interests at the forefront of our approach.`
-      ]
-    },
-    {
-      h2: `How Long Do I Have To Make A Child Injury Claim in ${location}?`,
-      content: [
-        `Child injury claims in ${location} benefit from extended limitation periods that recognise children cannot reasonably be expected to understand and pursue their legal rights. The standard three-year period does not begin until the child reaches 18, meaning a child injured at any age has until their 21st birthday to bring a claim. This provides significant protection for children in ${location}, ensuring they are not disadvantaged by their age when seeking compensation for injuries caused by others' negligence.`,
-        `Despite this generous timeframe, there are compelling reasons for families in ${location} to pursue child injury claims promptly. Evidence deteriorates over time - witnesses become difficult to locate, their memories fade, and documents may be lost or destroyed. ${isCounty ? `Local evidence in ${location}` : `Evidence specific to ${location}`}, such as CCTV footage from nearby businesses or records from local facilities, may be overwritten or discarded if not secured quickly. Early action ensures the strongest possible case can be built and compensation obtained whilst it can make the most difference to the child's recovery.`,
-        `Some child injury claims in ${location} are subject to shorter time limits that require immediate attention. Claims to the Criminal Injuries Compensation Authority must generally be made within two years, regardless of the child's age. Claims against public bodies may require formal notice within shorter periods. Our ${location} solicitors will advise on the specific limitation periods applicable to your child's claim and ensure all procedural requirements are met within the relevant deadlines, protecting your child's right to compensation.`
-      ]
-    },
-    {
-      h2: `Evidence Required For A Child Injury Claim in ${location}`,
-      content: [
-        `Medical evidence forms the foundation of any child injury claim in ${location}. Our solicitors will obtain comprehensive medical records documenting the injury and treatment, whether at ${isCounty ? `hospitals in ${location}` : `${location} hospitals`} or further afield. Independent medical experts are instructed to prepare detailed reports on the nature and extent of injuries, the prognosis, and any ongoing treatment needs. This expert evidence is essential for accurately valuing the claim and ensuring all future needs are properly accounted for in any settlement for children in ${location}.`,
-        `Evidence of negligence must be established to succeed in a child injury claim in ${location}. The specific evidence required depends on how the injury occurred. For road traffic accidents in ${location}, this might include police reports, witness statements, and forensic collision analysis. For school accidents, risk assessments, maintenance records, and evidence of previous incidents may be relevant. Our ${location} team has experience investigating all types of incidents and identifying the evidence needed to prove negligence in each case.`,
-        `Financial evidence supports claims for special damages in ${location} child injury cases. This includes receipts for medical expenses, travel costs to appointments, and expenditure on equipment or care. For serious injuries with ongoing implications, expert evidence quantifies future losses including care costs, equipment needs, and lost future earnings. Our solicitors work with care experts, accountants, and other specialists to ensure all financial losses are properly calculated and claimed, maximising the compensation available for the child's future in ${location}.`
-      ]
-    },
-    {
-      h2: `How Long Does A Child Injury Claim Take To Settle in ${location}?`,
-      content: [
-        `The duration of child injury claims in ${location} varies depending on the complexity of the case and the severity of injuries. Straightforward claims where liability is admitted might settle within 6 to 12 months, whilst more complex cases involving disputed liability or serious injuries can take several years. Our ${location} solicitors provide realistic time estimates at the outset and keep clients informed of progress throughout the claims process, ensuring families understand what to expect and when.`,
-        `For children in ${location} with serious injuries, it may be necessary to wait until their condition has stabilised before finalising a settlement. Rushing to settle before the full extent of the child's needs is known could result in under-compensation. During this time, we can seek interim payments to meet immediate needs for treatment, care, or equipment. ${isCounty ? `Throughout ${location}` : `In ${location}`}, we have helped families access interim funding to support their child's recovery whilst the claim progresses towards final resolution.`,
-        `The court approval process adds a final step to child injury settlements in ${location}. Once terms are agreed, a judge must approve the settlement at an infant approval hearing to ensure it is fair and in the child's best interests. This typically takes several weeks to arrange. The judge will also decide how the compensation should be managed - usually investment in the Court Funds Office until the child reaches 18, though earlier releases can be approved for specific needs. This process protects children in ${location} and ensures settlements are appropriate.`
-      ]
-    },
-    {
-      h2: `Local Support For Child Injury Claims in ${location}`,
-      content: [
-        `Families in ${location} pursuing child injury claims can access a range of local support services to assist with their child's recovery and rehabilitation. ${isCounty ? `Throughout ${location}` : `In ${location}`}, there are medical facilities, therapy providers, and support organisations that can help children recover from injuries and adapt to any lasting effects. Our solicitors can connect clients with appropriate local services and ensure treatment and support needs are documented and included in compensation claims.`,
-        `Our ${location} team has built strong relationships with medical experts, rehabilitation specialists, and care providers in the area. This network allows us to arrange examinations and assessments quickly, and to obtain expert evidence that supports our clients' claims. ${isCounty ? `Whether in the main towns of ${location} or more rural areas` : `Whether in ${location} town centre or surrounding areas`}, we can facilitate access to the specialists needed to build strong cases and secure appropriate compensation for injured children.`,
-        `Beyond the legal aspects of child injury claims, we understand that families in ${location} need practical support following an incident. We can provide information about local support groups, charitable organisations, and statutory services that may be able to assist. Our holistic approach ensures that families receive comprehensive support, not just legal representation. ${isCounty ? `Across ${location}` : `In ${location}`}, we are committed to helping injured children and their families access all the resources they need to move forward positively.`
-      ]
-    },
-    {
-      h2: `Why Choose Our ${location} Child Injury Claims Specialists?`,
-      content: [
-        `Our child injury claims team in ${location} combines specialist legal expertise with genuine compassion for the families we represent. We understand that pursuing a compensation claim can be stressful, particularly when dealing with a child's injury and recovery. Our ${location} solicitors provide clear, honest advice and handle all aspects of the claim efficiently, allowing families to focus on supporting their child. We are accessible, responsive, and dedicated to achieving the best possible outcomes for every client.`,
-        `We have a proven track record of success in child injury claims in ${location} and throughout the UK. Our experience covers all types of child injury cases, from minor accidents to catastrophic injuries with lifelong consequences. We have secured substantial settlements and court awards for children in ${location}, with compensation that properly reflects their injuries, ongoing needs, and future requirements. Our 98% success rate demonstrates our expertise and commitment to every case we take on.`,
-        `Our no win no fee service ensures that families in ${location} can access expert legal representation regardless of their financial circumstances. We offer free initial consultations to assess cases and explain the claims process. If we take on your child's claim, you will not pay any upfront costs, and if the claim is unsuccessful, you will not pay our fees. This removes the financial risk from pursuing compensation and ensures that all children in ${location} who have been injured through negligence have access to justice.`
-      ]
-    },
-    {
-      h2: `Other Areas We Cover Near ${location}`,
-      content: [
-        `Whilst we provide dedicated service to clients in ${location}, our child injury claims expertise extends across the entire United Kingdom. ${isCounty ? `Within ${location}, we cover all major towns and communities` : `In the broader ${countyData?.county || 'region'} area, we serve clients in multiple towns and villages`}, ensuring that families throughout the region can access specialist legal representation for their child's injury claim. Our national network of solicitors means we can assist regardless of where the incident occurred or where you are located.`,
-        `${isCounty ? `From ${location}, we also serve neighbouring counties` : `From ${location}, we serve clients throughout ${countyData?.county || 'the county'} and adjacent areas`}, providing the same high standard of service and expertise. Our solicitors are familiar with courts, medical facilities, and support services across the UK, allowing us to handle claims efficiently wherever they arise. Whether your child was injured locally or elsewhere in the country, we can provide expert representation and pursue the compensation they deserve.`,
-        `Our flexible approach to client service means that distance is never a barrier to accessing our child injury claims expertise. We offer consultations by telephone, video call, and can arrange home visits in ${location} and surrounding areas where appropriate. Secure technology allows us to manage claims efficiently and communicate effectively with clients throughout the UK. Wherever you are located, you will receive the same dedicated service and the same commitment to achieving the best outcome for your child.`
-      ]
-    }
-  ]
-})
+const getLocationPageContent = (location: string, isCounty: boolean, countyData?: typeof locationData[0], townData?: { name: string; slug: string; postcode: string }) => {
+  const countyLink = isCounty 
+    ? `<a href="#near-me/${countyData?.slug || ''}" class="text-[#f59e0b] underline font-medium">${location}</a>`
+    : `<a href="#near-me/${countyData?.slug || ''}" class="text-[#f59e0b] underline font-medium">${countyData?.county || ''}</a>`
+  
+  const mainKeywordLink = `<a href="#home" class="text-[#f59e0b] underline font-medium">child injury claims</a>`
+
+  return {
+    title: isCounty 
+      ? `Child Injury Claims in ${location} - Claim Compensation UK`
+      : `Child Injury Claims in ${location} ${townData?.postcode || ''} - Claim Compensation`,
+    description: `Child injury claims in ${location}. No win no fee compensation for injured children. Free assessment, expert guidance. Contact us today.`,
+    h1: isCounty 
+      ? `Child Injury Claims in ${location}`
+      : `Child Injury Claims in ${location} ${townData?.postcode || ''}`,
+    sections: [
+      {
+        h2: `Who Can Make A Child Injury Claim in ${location}?`,
+        content: [
+          `${mainKeywordLink} in ${location} can be made by any person injured due to another party's negligence or breach of duty. Eligible claimants include children injured at school, in public places, on the road, or due to medical negligence. Parents or guardians can submit claims on behalf of children under 18.`,
+          `Claims on behalf of children in ${location} must be submitted by a parent or legal guardian acting as litigation friend. Legal responsibility is established through negligence or breach of statutory duty. ${isCounty ? `We cover all areas within ${location}` : `As part of ${countyData?.county}, ${location} claims`} follow the same legal principles as elsewhere in the UK.`,
+          `Evidence such as medical records, witness statements, incident reports, and proof of negligence helps establish the claim. The three-year limitation period does not begin until the child reaches 18. Claims can be referred to appropriate legal representation for assessment and processing.`
+        ]
+      },
+      {
+        h2: `How Much Compensation Can I Claim For A Child Injury in ${location}?`,
+        content: [
+          `Child injury claims in ${location} can result in compensation ranging from £1,000 for minor injuries to over £500,000 for severe cases under UK personal injury law. Compensation is assessed based on the Judicial College Guidelines and includes general damages and special damages.`,
+          `Factors affecting potential compensation include the severity of the injury, any permanent disability or scarring, psychological impact, effect on education and future prospects, and financial losses incurred. ${isCounty ? `Cases in ${location}` : `Cases in ${location} and throughout ${countyData?.county}`} are assessed on their individual merits.`,
+          `We operate on a No-Win, No-Fee basis, subject to a success fee and insurance costs where applicable. No-Win, No-Fee means you only pay if your claim is successful. If successful, a success fee (capped at 25% of damages) plus any agreed insurance costs may be deducted. Contact us in ${location} to get an estimate of your compensation.`
+        ]
+      },
+      {
+        h2: `What Are The Most Common Causes Of Child Injury Claims in ${location}?`,
+        content: [
+          `Child injury claims under UK personal injury law are most commonly caused by road traffic accidents, school and nursery incidents, medical negligence, and accidents in public places. Legal breaches include failure to supervise adequately, negligent driving, unsafe premises, and substandard medical care.`,
+          `${mainKeywordLink} in ${location} typically arise in schools, playgrounds, roads, healthcare settings, and private properties where the injured party had a legal right to be present. Common claimants include children injured as pedestrians, passengers, during sports activities, or whilst in someone else's care.`,
+          `Liability is established through negligence or statutory responsibility under various laws including road traffic legislation, occupiers' liability acts, and education regulations. ${isCounty ? `Throughout ${location}` : `In ${location} and ${countyData?.county}`}, we can help assess the circumstances and establish grounds for compensation.`
+        ]
+      },
+      {
+        h2: `How Do I Start A Child Injury Claim in ${location}?`,
+        content: [
+          `${mainKeywordLink} involve proving that another party was negligent or breached statutory obligations. Relevant evidence includes medical records, injury photographs, witness statements, school or incident reports, and any correspondence with the responsible party.`,
+          `The process begins with gathering evidence and assessing liability. A letter of claim is then sent to the responsible party or their insurers. ${isCounty ? `In ${location}` : `In ${location}, ${countyData?.county}`}, cases can be referred for assessment, with evidence reviewed to determine fault and calculate damages.`,
+          `We facilitate access to No-Win, No-Fee legal representation for claims in ${location}. The process includes evidence gathering, liability assessment, negotiation with insurers, and if necessary, court proceedings. Compensation is sought through settlement or court action depending on circumstances.`
+        ]
+      },
+      {
+        h2: `How Long Do I Have To Make A Child Injury Claim in ${location}?`,
+        content: [
+          `Child injury claims in ${location} are subject to a three-year limitation period starting from the date of injury. Where the injured party is under 18, the time limit begins on their 18th birthday and ends when they turn 21. This extended period recognises that children cannot be expected to understand their rights.`,
+          `Claims made on behalf of someone without mental capacity have no time restriction unless capacity is regained. However, it is advisable to pursue claims promptly whilst evidence is fresh and witnesses can be located. Early action typically leads to stronger cases and better outcomes.`,
+          `${isCounty ? `For claims in ${location}` : `For claims in ${location} and ${countyData?.county}`}, parents or guardians should seek assessment as soon as possible after an incident. This ensures evidence is preserved and the child's interests are protected throughout the process.`
+        ]
+      },
+      {
+        h2: `What Evidence Is Needed For A Child Injury Claim in ${location}?`,
+        content: [
+          `Child injury claims in ${location} require proof of injury and the responsible party's breach of legal duty. Liability is established through negligence or breach of statutory duty, supported by comprehensive documentation of the incident and its consequences.`,
+          `Essential evidence includes injury documentation such as hospital and GP reports, photographs of wounds taken immediately after the incident, eyewitness statements that corroborate the event, evidence of prior incidents or complaints, employment records for parents showing wage loss, and treatment receipts for therapy or rehabilitation.`,
+          `Providing comprehensive evidence helps support the assessment of the claim and ensures appropriate compensation is calculated. ${isCounty ? `In ${location}` : `In ${location}, ${countyData?.county}`}, we can guide families through the evidence-gathering process to build the strongest possible case.`
+        ]
+      },
+      {
+        h2: `How Long Does A Child Injury Claim Take To Settle in ${location}?`,
+        content: [
+          `Child injury claims in ${location} typically settle within 6 to 18 months when liability is admitted and medical evidence is complete. Complex cases involving serious injury or court proceedings can take over 24 months, particularly if the full extent of injuries needs to be assessed over time.`,
+          `For children with ongoing medical needs, it may be necessary to wait until their condition has stabilised before finalising settlement. This ensures all future care requirements and their impact on the child's life are properly accounted for in the compensation awarded.`,
+          `Claims involving urgent medical costs may qualify for interim payments before full settlement. ${isCounty ? `In ${location}` : `In ${location} and throughout ${countyData?.county}`}, interim payments can help families access treatment and support whilst the claim is ongoing.`
+        ]
+      },
+      {
+        h2: `Can I Claim If The Responsible Party Is Unknown Or Uninsured?`,
+        content: [
+          `Child injury claims are still possible if the responsible party is unknown or uninsured. In road traffic accident cases, compensation may be pursued through the Motor Insurers' Bureau (MIB) which provides a scheme for victims of uninsured or hit-and-run drivers.`,
+          `For incidents in public places or involving unidentified parties, claims can sometimes be pursued through local authorities, public liability insurance, or other statutory schemes. Evidence such as police reports and witness statements become particularly important in these circumstances.`,
+          `Claims in ${location} involving unidentified parties must establish liability through available evidence and appropriate legal mechanisms. Compensation amounts depend on individual circumstances. Not all claims will succeed, but an assessment can determine the viability of pursuing compensation.`
+        ]
+      },
+      {
+        h2: `Local Support For Child Injury Claims in ${location}`,
+        content: [
+          `Families in ${location} pursuing child injury claims can access support throughout the claims process. ${isCounty ? `Across ${location}` : `In ${location} and ${countyData?.county}`}, we help gather evidence, assess liability, calculate compensation, and manage the entire process from initial enquiry to final settlement.`,
+          `Local knowledge and understanding of ${isCounty ? `${location}` : `${countyData?.county} and ${location}`} can be valuable in building a case. We can help identify relevant local facilities for medical assessments and ensure all evidence is properly documented and preserved.`,
+          `Contact us for a free, no-obligation case assessment to discuss your child's injury and potential claim. We can provide guidance on the process, likely timescales, and potential compensation based on the specific circumstances of your case.`
+        ]
+      },
+      {
+        h2: `Other Areas We Cover Near ${location}`,
+        content: [
+          `In addition to ${location}, we provide ${mainKeywordLink} services across the entire United Kingdom. ${isCounty ? `Within ${location}, we cover all major towns and communities` : `In ${countyData?.county} and surrounding areas, we serve clients in multiple locations`}. Our national coverage ensures families can access help regardless of where the incident occurred.`,
+          `${isCounty ? `From ${location}, we also serve neighbouring counties` : `Other areas near ${location} in ${countyData?.county} are also covered by our service`}. Our team can handle claims from any location in the UK, providing consistent support and guidance throughout the claims process.`,
+          `Whether the incident occurred locally or elsewhere, we can help. Use the areas covered section below to find your location, or contact us directly for a free assessment of your child injury claim.`
+        ]
+      }
+    ]
+  }
+}
 
 // Static page content
 const getAboutContent = () => ({
-  title: "About Us | Child Injury Claims Specialists",
-  description: "Learn about our experienced team of child injury claims specialists. Dedicated to helping families across the UK secure compensation for injured children.",
-  h1: "About Child Injury Claims Specialists",
+  title: "About Us | Child Injury Claims UK",
+  description: "Learn about Child Injury Claims. We help families across the UK pursue compensation for injured children on a no win no fee basis.",
+  h1: "About Child Injury Claims",
   content: `
-    <p class="mb-4">Child Injury Claims Specialists is a dedicated legal practice focused exclusively on helping families pursue compensation for children who have been injured through no fault of their own. With years of experience in this sensitive and specialised area of law, we have helped hundreds of families across the United Kingdom secure the compensation their children need and deserve.</p>
+    <p class="mb-4">Child Injury Claims helps families across the UK who have children that have suffered injuries due to someone else's negligence. We provide assessment and referral services to ensure cases are handled by appropriate legal representation authorised and regulated by relevant bodies.</p>
     
-    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Our Mission</h2>
-    <p class="mb-4">Our mission is simple: to ensure that every child who has been injured due to someone else's negligence has access to expert legal representation and the compensation they need to support their recovery and future. We believe that financial barriers should never prevent a child from obtaining justice, which is why we offer our services on a no win no fee basis.</p>
+    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Our Service</h2>
+    <p class="mb-4">We specialise in connecting families with experienced legal representation for child injury claims. Our service includes initial case assessment, evidence review, and referral to appropriate legal teams who operate on a No Win, No Fee basis.</p>
     
-    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Our Team</h2>
-    <p class="mb-4">Our team comprises specialist solicitors, legal executives, and support staff who are passionate about child injury law. Each member of our team undergoes continuous professional development to stay at the forefront of this evolving area of law. We are proud members of the Law Society and are regulated by the Solicitors Regulation Authority, ensuring the highest standards of professional conduct.</p>
+    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">How We Work</h2>
+    <p class="mb-4">When you contact us, we assess the circumstances of your child's injury to determine if there are grounds for a compensation claim. We review the evidence, establish potential liability, and connect you with legal representation suited to your case. Our service is free and without obligation.</p>
     
-    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Our Approach</h2>
-    <p class="mb-4">We approach every case with compassion, professionalism, and an unwavering commitment to our clients' best interests. We understand that pursuing a compensation claim can be stressful, particularly when dealing with a child's injury and recovery. That's why we handle all aspects of the claim efficiently and keep our clients informed at every stage. Our goal is to make the process as straightforward as possible whilst achieving the best possible outcome for each child.</p>
-    
-    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Our Track Record</h2>
-    <p class="mb-4">We have successfully recovered millions of pounds in compensation for injured children across the UK. Our cases have ranged from minor injuries to catastrophic, life-changing conditions, and we have achieved positive outcomes in over 98% of the claims we have handled. We are proud of the difference we have made in our clients' lives, providing them with the financial resources to access treatment, support, and opportunities they might otherwise have been denied.</p>
+    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">No Win, No Fee</h2>
+    <p class="mb-4">Cases we accept are handled on a No Win, No Fee basis. This means there are no upfront costs to pay. If the claim is successful, a success fee and insurance costs may be deducted from the settlement. If unsuccessful, there is nothing to pay. This arrangement makes justice accessible to all families regardless of financial circumstances.</p>
     
     <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Contact Us</h2>
-    <p class="mb-4">If your child has been injured and you would like to discuss the possibility of making a compensation claim, please contact us for a free, no-obligation consultation. We are here to help you understand your options and guide you through the claims process with expertise and compassion.</p>
+    <p class="mb-4">For a free, no-obligation assessment of your child's injury claim, contact us today. We can advise on the merits of your case, the claims process, and potential compensation. We are here to help families secure the compensation their children deserve.</p>
   `
 })
 
 const getContactContent = () => ({
-  title: "Contact Us | Child Injury Claims Specialists",
-  description: "Contact our child injury claims team for a free, no-obligation assessment. Call us or complete our online form to discuss your child's compensation claim.",
-  h1: "Contact Child Injury Claims Specialists"
+  title: "Contact Us | Child Injury Claims UK",
+  description: "Contact Child Injury Claims for a free, no-obligation assessment. We help families across the UK claim compensation for injured children.",
+  h1: "Contact Child Injury Claims"
 })
 
 const getPrivacyContent = () => ({
-  title: "Privacy Policy | Child Injury Claims Specialists",
-  description: "Read our privacy policy to understand how we collect, use, and protect your personal information when you use our child injury claims services.",
+  title: "Privacy Policy | Child Injury Claims UK",
+  description: "Read our privacy policy to understand how we collect, use, and protect your personal information.",
   h1: "Privacy Policy",
   content: `
-    <p class="mb-4">At Child Injury Claims Specialists, we are committed to protecting your privacy and ensuring the security of any personal information you provide to us. This privacy policy explains how we collect, use, and safeguard your information when you use our services or visit our website.</p>
+    <p class="mb-4">At Child Injury Claims, we are committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information when you use our services.</p>
     
     <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Information We Collect</h2>
-    <p class="mb-4">We may collect personal information including your name, contact details, and information about your child's injury and circumstances when you contact us for advice or to make a claim. We also collect information automatically when you visit our website, including your IP address, browser type, and pages visited.</p>
+    <p class="mb-4">We may collect personal information including your name, contact details, and information about your child's injury when you contact us. We also collect information automatically when you visit our website.</p>
     
     <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">How We Use Your Information</h2>
-    <p class="mb-4">We use your personal information to provide legal services, respond to enquiries, improve our website, and communicate with you about our services. We do not sell your personal information to third parties. We may share your information with third parties who assist us in providing our services, such as medical experts and insurance companies, but only with your consent and where necessary for your claim.</p>
+    <p class="mb-4">We use your information to assess your case, respond to enquiries, and connect you with appropriate legal representation. We do not sell your personal information to third parties.</p>
     
     <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Data Security</h2>
-    <p class="mb-4">We implement appropriate technical and organisational measures to protect your personal information against unauthorised access, alteration, disclosure, or destruction. Our systems are regularly reviewed and updated to ensure ongoing security.</p>
+    <p class="mb-4">We implement appropriate measures to protect your personal information against unauthorised access, alteration, disclosure, or destruction.</p>
     
-    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Your Rights</h2>
-    <p class="mb-4">Under the General Data Protection Regulation (GDPR), you have the right to access your personal data, request correction of inaccurate data, request deletion of your data, and object to processing. To exercise these rights, please contact us using the details provided on our website.</p>
-    
-    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Cookies</h2>
-    <p class="mb-4">Our website uses cookies to enhance your browsing experience and analyse website traffic. For more information about cookies, please see our Cookie Policy.</p>
-    
-    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Contact Us</h2>
-    <p class="mb-4">If you have any questions about this privacy policy or our data practices, please contact us at ${SITE_CONFIG.email}.</p>
+    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Contact</h2>
+    <p class="mb-4">For questions about this policy, contact us at ${SITE_CONFIG.email}.</p>
   `
 })
 
 const getCookiesContent = () => ({
-  title: "Cookie Policy | Child Injury Claims Specialists",
-  description: "Learn about how we use cookies on our child injury claims website and how you can manage your cookie preferences.",
+  title: "Cookie Policy | Child Injury Claims UK",
+  description: "Learn about how we use cookies on our website.",
   h1: "Cookie Policy",
   content: `
-    <p class="mb-4">This Cookie Policy explains what cookies are, how we use them on the Child Injury Claims Specialists website, and how you can manage your cookie preferences.</p>
+    <p class="mb-4">This Cookie Policy explains what cookies are, how we use them, and how you can manage your preferences.</p>
     
     <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">What Are Cookies?</h2>
-    <p class="mb-4">Cookies are small text files that are stored on your device when you visit a website. They are widely used to make websites work more efficiently and to provide information to website owners about how visitors use their site.</p>
+    <p class="mb-4">Cookies are small text files stored on your device when you visit a website. They help websites work efficiently and provide information to website owners.</p>
     
     <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Types of Cookies We Use</h2>
-    <p class="mb-4"><strong class="text-[#1a2744]">Essential Cookies:</strong> These cookies are necessary for the website to function properly. They enable basic functions like page navigation and access to secure areas of the website.</p>
-    <p class="mb-4"><strong class="text-[#1a2744]">Analytics Cookies:</strong> We use analytics cookies to understand how visitors interact with our website. This helps us improve our website and services. We use Google Analytics for this purpose.</p>
-    <p class="mb-4"><strong class="text-[#1a2744]">Functional Cookies:</strong> These cookies allow the website to remember choices you make, such as your cookie preferences, to provide enhanced features.</p>
+    <p class="mb-4"><strong class="text-[#1a2744]">Essential Cookies:</strong> Necessary for the website to function properly.</p>
+    <p class="mb-4"><strong class="text-[#1a2744]">Analytics Cookies:</strong> Help us understand how visitors use our website.</p>
     
     <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Managing Cookies</h2>
-    <p class="mb-4">Most web browsers allow you to control cookies through their settings. You can usually find these settings in the 'options' or 'preferences' menu of your browser. However, restricting cookies may impact the functionality of our website.</p>
+    <p class="mb-4">Most browsers allow you to control cookies through their settings. Restricting cookies may affect website functionality.</p>
     
-    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Changes to This Policy</h2>
-    <p class="mb-4">We may update this Cookie Policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
-    
-    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Contact Us</h2>
-    <p class="mb-4">If you have any questions about our use of cookies, please contact us at ${SITE_CONFIG.email}.</p>
+    <h2 class="text-2xl font-bold mt-8 mb-4 text-[#1a2744]">Contact</h2>
+    <p class="mb-4">For questions, contact us at ${SITE_CONFIG.email}.</p>
   `
 })
 
@@ -797,9 +782,19 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState('')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [leadFormStep, setLeadFormStep] = useState(1)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitSuccess, setSubmitSuccess] = useState(false)
   const [formData, setFormData] = useState({
     incidentType: '',
     incidentDate: '',
+    name: '',
+    phone: '',
+    email: '',
+    message: ''
+  })
+
+  // Sidebar form state
+  const [sidebarForm, setSidebarForm] = useState({
     name: '',
     phone: '',
     email: '',
@@ -813,7 +808,6 @@ export default function Home() {
 
   // Initialize on mount (after hydration)
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- Required for hydration safety
     setMounted(true)
     
     // Set initial values from window
@@ -951,7 +945,7 @@ export default function Home() {
         description = cookiesContent.description
         break
       default:
-        title = 'Page Not Found | Child Injury Claims Specialists'
+        title = 'Page Not Found | Child Injury Claims'
         description = 'The page you are looking for could not be found.'
     }
 
@@ -963,19 +957,77 @@ export default function Home() {
     }
   }, [page])
 
-  // Generate FAQ Schema
-  const generateFAQSchema = (sections: { h2: string; content: string[] }[]) => {
-    return {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": sections.map(section => ({
-        "@type": "Question",
-        "name": section.h2,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": section.content.join(' ')
-        }
-      }))
+  // Handle sidebar form submission
+  const handleSidebarSubmit = async () => {
+    if (!sidebarForm.name || !sidebarForm.phone || !sidebarForm.email) return
+    
+    setIsSubmitting(true)
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...sidebarForm,
+          location: page.type === 'county' ? page.county?.county : 
+                   page.type === 'town' ? `${page.town?.name}, ${page.county?.county}` : 
+                   'Homepage'
+        })
+      })
+      
+      if (response.ok) {
+        setSubmitSuccess(true)
+        setSidebarForm({ name: '', phone: '', email: '', message: '' })
+        setTimeout(() => setSubmitSuccess(false), 5000)
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  // Handle lead form submission
+  const handleLeadFormSubmit = async () => {
+    if (!formData.name || !formData.phone || !formData.email) return
+    
+    setIsSubmitting(true)
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...formData,
+          location: page.type === 'county' ? page.county?.county : 
+                   page.type === 'town' ? `${page.town?.name}, ${page.county?.county}` : 
+                   'Homepage'
+        })
+      })
+      
+      if (response.ok) {
+        setLeadFormStep(4)
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  // Calculate Compensation
+  const calculateCompensation = () => {
+    const baseAmounts: Record<string, Record<string, [number, number]>> = {
+      'fracture': { 'mild': [3000, 8000], 'moderate': [8000, 20000], 'severe': [20000, 50000], 'very severe': [50000, 100000] },
+      'head': { 'mild': [1500, 10000], 'moderate': [10000, 50000], 'severe': [50000, 300000], 'very severe': [300000, 500000] },
+      'burns': { 'mild': [2000, 8000], 'moderate': [8000, 30000], 'severe': [30000, 100000], 'very severe': [100000, 250000] },
+      'psychological': { 'mild': [1500, 6000], 'moderate': [6000, 25000], 'severe': [25000, 80000], 'very severe': [80000, 150000] },
+      'soft-tissue': { 'mild': [1000, 3000], 'moderate': [3000, 10000], 'severe': [10000, 30000], 'very severe': [30000, 60000] }
+    }
+
+    if (calcInjury && calcSeverity) {
+      const range = baseAmounts[calcInjury]?.[calcSeverity]
+      if (range) {
+        setCalcResult(`Estimated Compensation: £${range[0].toLocaleString()} - £${range[1].toLocaleString()}`)
+      }
     }
   }
 
@@ -1000,14 +1052,8 @@ export default function Home() {
             <a href="#contact" onClick={() => navigateTo('contact')} className="hover:text-[#f59e0b] transition-colors">Contact</a>
           </nav>
 
-          {/* Phone & CTA */}
+          {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <a href={`tel:${SITE_CONFIG.phone}`} className="flex items-center gap-2 text-[#f59e0b] font-semibold">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              {SITE_CONFIG.phone}
-            </a>
             <Button 
               onClick={() => setShowLeadForm(true)}
               className="bg-[#f59e0b] hover:bg-[#d97706] text-white animate-pulse"
@@ -1038,7 +1084,6 @@ export default function Home() {
               <a href="#home" onClick={() => navigateTo('home')} className="hover:text-[#f59e0b] transition-colors">Home</a>
               <a href="#about" onClick={() => navigateTo('about')} className="hover:text-[#f59e0b] transition-colors">About</a>
               <a href="#contact" onClick={() => navigateTo('contact')} className="hover:text-[#f59e0b] transition-colors">Contact</a>
-              <a href={`tel:${SITE_CONFIG.phone}`} className="text-[#f59e0b] font-semibold">{SITE_CONFIG.phone}</a>
               <Button 
                 onClick={() => { setShowLeadForm(true); setMobileMenuOpen(false); }}
                 className="bg-[#f59e0b] hover:bg-[#d97706] text-white w-full"
@@ -1052,9 +1097,74 @@ export default function Home() {
     </header>
   )
 
+  // Render Sticky Sidebar Form
+  const renderStickySidebar = () => (
+    <div className="hidden lg:block fixed right-4 top-24 w-80 z-40">
+      <div className="bg-white rounded-lg shadow-xl border border-gray-200 p-6">
+        <h3 className="text-lg font-bold text-[#1a2744] mb-4">Request a Free Assessment</h3>
+        
+        {submitSuccess ? (
+          <div className="bg-green-100 text-green-700 p-4 rounded-lg text-center">
+            <svg className="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            <p>Thank you! We'll contact you within 24 hours.</p>
+          </div>
+        ) : (
+          <div className="space-y-4">
+            <div>
+              <Input
+                type="text"
+                placeholder="Your Name *"
+                value={sidebarForm.name}
+                onChange={(e) => setSidebarForm({...sidebarForm, name: e.target.value})}
+                className="w-full"
+              />
+            </div>
+            <div>
+              <Input
+                type="tel"
+                placeholder="Phone Number *"
+                value={sidebarForm.phone}
+                onChange={(e) => setSidebarForm({...sidebarForm, phone: e.target.value})}
+                className="w-full"
+              />
+            </div>
+            <div>
+              <Input
+                type="email"
+                placeholder="Email Address *"
+                value={sidebarForm.email}
+                onChange={(e) => setSidebarForm({...sidebarForm, email: e.target.value})}
+                className="w-full"
+              />
+            </div>
+            <div>
+              <Textarea
+                placeholder="Tell us about your case..."
+                value={sidebarForm.message}
+                onChange={(e) => setSidebarForm({...sidebarForm, message: e.target.value})}
+                rows={3}
+                className="w-full"
+              />
+            </div>
+            <Button
+              onClick={handleSidebarSubmit}
+              disabled={!sidebarForm.name || !sidebarForm.phone || !sidebarForm.email || isSubmitting}
+              className="w-full bg-[#f59e0b] hover:bg-[#d97706] text-white"
+            >
+              {isSubmitting ? 'Submitting...' : 'Submit Enquiry'}
+            </Button>
+            <p className="text-xs text-gray-500 text-center">No obligation • 100% Confidential</p>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+
   // Render Hero Section
   const renderHero = (title: string, subtitle: string, isLocation: boolean = false, locationName?: string) => (
-    <section className="bg-gradient-to-br from-[#1a2744] to-[#2d3e5f] text-white py-16 md:py-24">
+    <section className="bg-gradient-to-br from-[#1a2744] to-[#2d3e5f] text-white py-12 md:py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           {/* Trust Badges */}
@@ -1064,37 +1174,16 @@ export default function Home() {
             <Badge className="bg-blue-600 text-white px-3 py-1 text-sm">✓ 98% Success Rate</Badge>
           </div>
           
-          <h1 className="text-3xl md:text-5xl font-bold mb-4" dangerouslySetInnerHTML={{ __html: title }} />
-          <p className="text-lg md:text-xl text-gray-300 mb-8">{subtitle}</p>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">{title}</h1>
+          <p className="text-lg text-gray-300 mb-6">{subtitle}</p>
           
-          {/* Lead Form CTA */}
-          <div className="bg-white rounded-lg p-6 max-w-xl mx-auto shadow-2xl">
-            <h3 className="text-[#1a2744] font-bold text-lg mb-4">
-              {isLocation ? `Claim Compensation in ${locationName}` : 'Start Your Child Injury Claim Today'}
-            </h3>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Input 
-                type="text" 
-                placeholder="Your Name" 
-                className="flex-1"
-                value={formData.name}
-                onChange={(e) => setFormData({...formData, name: e.target.value})}
-              />
-              <Input 
-                type="tel" 
-                placeholder="Phone Number" 
-                className="flex-1"
-                value={formData.phone}
-                onChange={(e) => setFormData({...formData, phone: e.target.value})}
-              />
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               onClick={() => setShowLeadForm(true)}
-              className="w-full mt-4 bg-[#f59e0b] hover:bg-[#d97706] text-white py-6 text-lg font-semibold"
+              className="bg-[#f59e0b] hover:bg-[#d97706] text-white px-8 py-6 text-lg font-semibold"
             >
-              Get Your Free Assessment →
+              Enquire Today – No Obligation
             </Button>
-            <p className="text-gray-500 text-sm mt-3">No obligation • 100% Confidential</p>
           </div>
         </div>
       </div>
@@ -1103,24 +1192,24 @@ export default function Home() {
 
   // Render Stats Bar
   const renderStatsBar = () => (
-    <section className="bg-white py-8 border-b">
+    <section className="bg-white py-6 border-b">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-[#1a2744]">10,000+</div>
-            <div className="text-gray-600">Claims Handled</div>
+            <div className="text-2xl md:text-3xl font-bold text-[#1a2744]">10,000+</div>
+            <div className="text-gray-600 text-sm">Claims Assessed</div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-[#1a2744]">£50M+</div>
-            <div className="text-gray-600">Compensation Recovered</div>
+            <div className="text-2xl md:text-3xl font-bold text-[#1a2744]">£50M+</div>
+            <div className="text-gray-600 text-sm">Compensation Secured</div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-[#1a2744]">98%</div>
-            <div className="text-gray-600">Success Rate</div>
+            <div className="text-2xl md:text-3xl font-bold text-[#1a2744]">98%</div>
+            <div className="text-gray-600 text-sm">Success Rate</div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-[#1a2744]">200+</div>
-            <div className="text-gray-600">5-Star Reviews</div>
+            <div className="text-2xl md:text-3xl font-bold text-[#1a2744]">200+</div>
+            <div className="text-gray-600 text-sm">5-Star Reviews</div>
           </div>
         </div>
       </div>
@@ -1129,26 +1218,13 @@ export default function Home() {
 
   // Render Content Section
   const renderContentSection = (h2: string, paragraphs: string[], index: number) => (
-    <section key={index} className={`py-12 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
+    <section key={index} className={`py-10 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#1a2744] mb-6">{h2}</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-[#1a2744] mb-4">{h2}</h2>
           {paragraphs.map((p, i) => (
-            <p key={i} className="text-gray-700 leading-relaxed mb-4">{p}</p>
+            <p key={i} className="text-gray-700 leading-relaxed mb-3" dangerouslySetInnerHTML={{ __html: p }} />
           ))}
-          
-          {/* CTA after every 2 sections */}
-          {(index + 1) % 2 === 0 && (
-            <div className="mt-8 p-6 bg-[#1a2744] rounded-lg text-white text-center">
-              <p className="text-lg mb-4">Need expert advice about your child's injury claim?</p>
-              <Button 
-                onClick={() => setShowLeadForm(true)}
-                className="bg-[#f59e0b] hover:bg-[#d97706] text-white px-8 py-6 text-lg"
-              >
-                Request Your Free Assessment
-              </Button>
-            </div>
-          )}
         </div>
       </div>
     </section>
@@ -1156,12 +1232,12 @@ export default function Home() {
 
   // Render Location Grid
   const renderLocationGrid = () => (
-    <section className="py-16 bg-gray-50">
+    <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1a2744] mb-4">Areas We Cover</h2>
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#1a2744] mb-4">Areas We Cover</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-            We provide expert child injury claims services across the entire United Kingdom. Select your area below or search for your location.
+            We provide child injury claims services across the entire UK. Search or select your area below.
           </p>
           
           {/* Search Box */}
@@ -1205,16 +1281,16 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
           {locationData.map(county => (
             <a
               key={county.slug}
               href={`#near-me/${county.slug}`}
               onClick={() => navigateTo(`near-me/${county.slug}`)}
-              className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow border border-gray-200 hover:border-[#f59e0b]"
+              className="bg-white p-3 rounded-lg shadow hover:shadow-lg transition-shadow border border-gray-200 hover:border-[#f59e0b] text-center"
             >
-              <h3 className="font-semibold text-[#1a2744] mb-1">{county.county}</h3>
-              <p className="text-sm text-gray-500">{county.towns.length}+ areas</p>
+              <h3 className="font-semibold text-[#1a2744] text-sm">{county.county}</h3>
+              <p className="text-xs text-gray-500">{county.towns.length}+ areas</p>
             </a>
           ))}
         </div>
@@ -1222,60 +1298,28 @@ export default function Home() {
     </section>
   )
 
-  // Render How It Works
-  const renderHowItWorks = () => (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#1a2744] text-center mb-12">How It Works</h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-[#f59e0b] rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl font-bold text-white">1</span>
-            </div>
-            <h3 className="text-xl font-bold text-[#1a2744] mb-2">Free Consultation</h3>
-            <p className="text-gray-600">Contact us for a free, no-obligation assessment of your child's injury claim. We'll advise on your options and next steps.</p>
-          </div>
-          <div className="text-center">
-            <div className="w-16 h-16 bg-[#f59e0b] rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl font-bold text-white">2</span>
-            </div>
-            <h3 className="text-xl font-bold text-[#1a2744] mb-2">We Build Your Case</h3>
-            <p className="text-gray-600">Our expert solicitors gather evidence, instruct medical experts, and prepare a compelling case for maximum compensation.</p>
-          </div>
-          <div className="text-center">
-            <div className="w-16 h-16 bg-[#f59e0b] rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl font-bold text-white">3</span>
-            </div>
-            <h3 className="text-xl font-bold text-[#1a2744] mb-2">Receive Compensation</h3>
-            <p className="text-gray-600">We negotiate the best possible settlement and secure court approval to ensure your child receives fair compensation.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-
   // Render Testimonials
   const renderTestimonials = () => (
-    <section className="py-16 bg-gray-50">
+    <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#1a2744] text-center mb-12">What Our Clients Say</h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#1a2744] text-center mb-8">What Our Clients Say</h2>
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {[
-            { name: "Sarah M.", location: "Manchester", text: "After my daughter's accident at school, I didn't know where to turn. The team guided me through every step and secured a settlement that will help with her education and future needs." },
-            { name: "James W.", location: "London", text: "Professional, compassionate, and incredibly thorough. They fought for my son's rights and achieved a result that exceeded our expectations. Highly recommend their services." },
-            { name: "Emma T.", location: "Birmingham", text: "The no win no fee arrangement meant we could pursue justice without financial worry. The compensation has made a real difference to our child's recovery and quality of life." }
+            { name: "Sarah M.", location: "Manchester", text: "After my daughter's injury at school, I didn't know where to turn. The team guided me through every step and secured a settlement that will help with her future needs." },
+            { name: "James W.", location: "London", text: "Professional and incredibly thorough. They handled everything efficiently and achieved a result that exceeded our expectations. Highly recommend their service." },
+            { name: "Emma T.", location: "Birmingham", text: "The no win no fee arrangement meant we could pursue justice without financial worry. The compensation has made a real difference to our child's recovery." }
           ].map((testimonial, i) => (
-            <div key={i} className="bg-white p-6 rounded-lg shadow">
-              <div className="flex text-[#f59e0b] mb-4">
+            <div key={i} className="bg-white p-5 rounded-lg shadow">
+              <div className="flex text-[#f59e0b] mb-3">
                 {[...Array(5)].map((_, j) => (
-                  <svg key={j} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                  <svg key={j} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
                     <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                   </svg>
                 ))}
               </div>
-              <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
-              <p className="font-semibold text-[#1a2744]">{testimonial.name}</p>
-              <p className="text-sm text-gray-500">{testimonial.location}</p>
+              <p className="text-gray-700 mb-3 text-sm italic">"{testimonial.text}"</p>
+              <p className="font-semibold text-[#1a2744] text-sm">{testimonial.name}</p>
+              <p className="text-xs text-gray-500">{testimonial.location}</p>
             </div>
           ))}
         </div>
@@ -1283,86 +1327,11 @@ export default function Home() {
     </section>
   )
 
-  // Calculate Compensation
-  const calculateCompensation = () => {
-      const baseAmounts: Record<string, Record<string, [number, number]>> = {
-        'fracture': { 'mild': [3000, 8000], 'moderate': [8000, 20000], 'severe': [20000, 50000], 'very severe': [50000, 100000] },
-        'head': { 'mild': [1500, 10000], 'moderate': [10000, 50000], 'severe': [50000, 300000], 'very severe': [300000, 500000] },
-        'burns': { 'mild': [2000, 8000], 'moderate': [8000, 30000], 'severe': [30000, 100000], 'very severe': [100000, 250000] },
-        'psychological': { 'mild': [1500, 6000], 'moderate': [6000, 25000], 'severe': [25000, 80000], 'very severe': [80000, 150000] },
-        'soft-tissue': { 'mild': [1000, 3000], 'moderate': [3000, 10000], 'severe': [10000, 30000], 'very severe': [30000, 60000] }
-      }
-
-      if (calcInjury && calcSeverity) {
-        const range = baseAmounts[calcInjury]?.[calcSeverity]
-        if (range) {
-          setCalcResult(`Estimated Compensation: £${range[0].toLocaleString()} - £${range[1].toLocaleString()}`)
-        }
-      }
-    }
-
-  // Render Compensation Calculator
-  const renderCalculator = () => (
-    <section className="py-16 bg-[#1a2744] text-white">
-      <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Compensation Calculator</h2>
-          <p className="text-gray-300 text-center mb-8">Get an estimate of potential compensation for your child's injury</p>
-          
-          <div className="bg-white/10 rounded-lg p-6">
-            <div className="grid md:grid-cols-2 gap-4 mb-4">
-              <div>
-                <Label className="text-white mb-2 block">Type of Injury</Label>
-                <Select value={calcInjury} onValueChange={setCalcInjury}>
-                  <SelectTrigger className="bg-white text-[#1a2744]">
-                    <SelectValue placeholder="Select injury type" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="fracture">Fracture</SelectItem>
-                    <SelectItem value="head">Head Injury</SelectItem>
-                    <SelectItem value="burns">Burns</SelectItem>
-                    <SelectItem value="psychological">Psychological</SelectItem>
-                    <SelectItem value="soft-tissue">Soft Tissue</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div>
-                <Label className="text-white mb-2 block">Severity</Label>
-                <Select value={calcSeverity} onValueChange={setCalcSeverity}>
-                  <SelectTrigger className="bg-white text-[#1a2744]">
-                    <SelectValue placeholder="Select severity" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="mild">Mild</SelectItem>
-                    <SelectItem value="moderate">Moderate</SelectItem>
-                    <SelectItem value="severe">Severe</SelectItem>
-                    <SelectItem value="very severe">Very Severe</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-            
-            <Button onClick={calculateCompensation} className="w-full bg-[#f59e0b] hover:bg-[#d97706] text-white py-6 text-lg mb-4">
-              Calculate Estimate
-            </Button>
-            
-            {calcResult && (
-              <div className="bg-[#f59e0b] rounded-lg p-4 text-center">
-                <p className="text-xl font-bold">{calcResult}</p>
-                <p className="text-sm mt-2">*This is an estimate only. Contact us for an accurate assessment.</p>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-
   // Render FAQ Accordion
   const renderFAQ = (sections: { h2: string; content: string[] }[]) => (
-    <section className="py-16 bg-gray-50">
+    <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#1a2744] text-center mb-12">Frequently Asked Questions</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-[#1a2744] text-center mb-8">Frequently Asked Questions</h2>
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {sections.map((section, index) => (
@@ -1372,7 +1341,7 @@ export default function Home() {
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-700">
                   {section.content.map((p, i) => (
-                    <p key={i} className="mb-2">{p}</p>
+                    <p key={i} className="mb-2 text-sm" dangerouslySetInnerHTML={{ __html: p }} />
                   ))}
                 </AccordionContent>
               </AccordionItem>
@@ -1405,7 +1374,7 @@ export default function Home() {
     }
     
     return (
-      <nav className="bg-white border-b py-3">
+      <nav className="bg-white border-b py-2">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-2 text-sm">
             {crumbs.map((crumb, i) => (
@@ -1428,19 +1397,19 @@ export default function Home() {
 
   // Render Town Links (for county pages)
   const renderTownLinks = (county: typeof locationData[0]) => (
-    <section className="py-12 bg-gray-50">
+    <section className="py-10 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold text-[#1a2744] mb-6 text-center">Areas We Cover in {county.county}</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <h2 className="text-xl font-bold text-[#1a2744] mb-4 text-center">Areas Covered in {county.county}</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 max-w-5xl mx-auto">
           {county.towns.map(town => (
             <a
               key={town.slug}
               href={`#near-me/${county.slug}-${town.slug}`}
               onClick={() => navigateTo(`near-me/${county.slug}-${town.slug}`)}
-              className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow border border-gray-200 hover:border-[#f59e0b] text-center"
+              className="bg-white p-3 rounded-lg shadow hover:shadow-lg transition-shadow border border-gray-200 hover:border-[#f59e0b] text-center"
             >
-              <h3 className="font-semibold text-[#1a2744]">{town.name}</h3>
-              <p className="text-sm text-gray-500">{town.postcode}</p>
+              <h3 className="font-semibold text-[#1a2744] text-sm">{town.name}</h3>
+              <p className="text-xs text-gray-500">{town.postcode}</p>
             </a>
           ))}
         </div>
@@ -1452,10 +1421,10 @@ export default function Home() {
   const renderOtherCounties = (currentCounty: typeof locationData[0]) => {
     const otherCounties = locationData.filter(c => c.slug !== currentCounty.slug).slice(0, 10)
     return (
-      <section className="py-12 bg-white">
+      <section className="py-10 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-[#1a2744] mb-6 text-center">Other Counties We Cover</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
+          <h2 className="text-xl font-bold text-[#1a2744] mb-4 text-center">Other Counties We Cover</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 max-w-5xl mx-auto">
             {otherCounties.map(county => (
               <a
                 key={county.slug}
@@ -1463,7 +1432,7 @@ export default function Home() {
                 onClick={() => navigateTo(`near-me/${county.slug}`)}
                 className="bg-gray-50 p-3 rounded-lg hover:bg-gray-100 text-center border border-gray-200"
               >
-                <h3 className="font-medium text-[#1a2744]">{county.county}</h3>
+                <h3 className="font-medium text-[#1a2744] text-sm">{county.county}</h3>
               </a>
             ))}
           </div>
@@ -1476,19 +1445,19 @@ export default function Home() {
   const renderNearbyTowns = (county: typeof locationData[0], currentTown: { name: string; slug: string }) => {
     const nearbyTowns = county.towns.filter(t => t.slug !== currentTown.slug).slice(0, 8)
     return (
-      <section className="py-12 bg-gray-50">
+      <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-[#1a2744] mb-6 text-center">Other Areas Near {currentTown.name}</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <h2 className="text-xl font-bold text-[#1a2744] mb-4 text-center">Other Areas Near {currentTown.name}</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto">
             {nearbyTowns.map(town => (
               <a
                 key={town.slug}
                 href={`#near-me/${county.slug}-${town.slug}`}
                 onClick={() => navigateTo(`near-me/${county.slug}-${town.slug}`)}
-                className="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow border border-gray-200 hover:border-[#f59e0b] text-center"
+                className="bg-white p-3 rounded-lg shadow hover:shadow-lg transition-shadow border border-gray-200 hover:border-[#f59e0b] text-center"
               >
-                <h3 className="font-semibold text-[#1a2744]">{town.name}</h3>
-                <p className="text-sm text-gray-500">{town.postcode}</p>
+                <h3 className="font-semibold text-[#1a2744] text-sm">{town.name}</h3>
+                <p className="text-xs text-gray-500">{town.postcode}</p>
               </a>
             ))}
           </div>
@@ -1499,48 +1468,47 @@ export default function Home() {
 
   // Render Footer
   const renderFooter = () => (
-    <footer className="bg-[#1a2744] text-white py-12">
+    <footer className="bg-[#1a2744] text-white py-10">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-6 mb-6">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-[#f59e0b] rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-8 h-8 bg-[#f59e0b] rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
                 </svg>
               </div>
-              <span className="text-xl font-bold">{SITE_CONFIG.brandName}</span>
+              <span className="text-lg font-bold">{SITE_CONFIG.brandName}</span>
             </div>
-            <p className="text-gray-400 text-sm">Expert child injury claims specialists helping families across the UK secure compensation for injured children.</p>
+            <p className="text-gray-400 text-sm">Helping families across the UK claim compensation for injured children.</p>
           </div>
           
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold mb-4">Quick Links</h3>
+            <h3 className="font-bold mb-3">Quick Links</h3>
             <nav className="flex flex-col gap-2">
-              <a href="#home" onClick={() => navigateTo('home')} className="text-gray-400 hover:text-[#f59e0b]">Home</a>
-              <a href="#about" onClick={() => navigateTo('about')} className="text-gray-400 hover:text-[#f59e0b]">About</a>
-              <a href="#contact" onClick={() => navigateTo('contact')} className="text-gray-400 hover:text-[#f59e0b]">Contact</a>
-              <a href="#privacy" onClick={() => navigateTo('privacy')} className="text-gray-400 hover:text-[#f59e0b]">Privacy Policy</a>
-              <a href="#cookies" onClick={() => navigateTo('cookies')} className="text-gray-400 hover:text-[#f59e0b]">Cookie Policy</a>
+              <a href="#home" onClick={() => navigateTo('home')} className="text-gray-400 hover:text-[#f59e0b] text-sm">Home</a>
+              <a href="#about" onClick={() => navigateTo('about')} className="text-gray-400 hover:text-[#f59e0b] text-sm">About</a>
+              <a href="#contact" onClick={() => navigateTo('contact')} className="text-gray-400 hover:text-[#f59e0b] text-sm">Contact</a>
+              <a href="#privacy" onClick={() => navigateTo('privacy')} className="text-gray-400 hover:text-[#f59e0b] text-sm">Privacy Policy</a>
+              <a href="#cookies" onClick={() => navigateTo('cookies')} className="text-gray-400 hover:text-[#f59e0b] text-sm">Cookie Policy</a>
             </nav>
           </div>
           
           {/* Contact */}
           <div>
-            <h3 className="font-bold mb-4">Contact Us</h3>
-            <div className="flex flex-col gap-2 text-gray-400">
-              <a href={`tel:${SITE_CONFIG.phone}`} className="hover:text-[#f59e0b]">{SITE_CONFIG.phone}</a>
+            <h3 className="font-bold mb-3">Contact</h3>
+            <div className="flex flex-col gap-2 text-gray-400 text-sm">
               <a href={`mailto:${SITE_CONFIG.email}`} className="hover:text-[#f59e0b]">{SITE_CONFIG.email}</a>
             </div>
           </div>
           
           {/* Counties */}
           <div>
-            <h3 className="font-bold mb-4">Areas Covered</h3>
-            <div className="grid grid-cols-2 gap-1 text-sm">
-              {locationData.slice(0, 10).map(county => (
+            <h3 className="font-bold mb-3">Areas Covered</h3>
+            <div className="grid grid-cols-2 gap-1 text-xs">
+              {locationData.slice(0, 8).map(county => (
                 <a
                   key={county.slug}
                   href={`#near-me/${county.slug}`}
@@ -1554,26 +1522,9 @@ export default function Home() {
           </div>
         </div>
         
-        {/* Full County Grid */}
-        <div className="border-t border-gray-700 pt-8 mb-8">
-          <h3 className="font-bold mb-4 text-center">All Areas We Cover</h3>
-          <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-2 text-sm text-center">
-            {locationData.map(county => (
-              <a
-                key={county.slug}
-                href={`#near-me/${county.slug}`}
-                onClick={() => navigateTo(`near-me/${county.slug}`)}
-                className="text-gray-400 hover:text-[#f59e0b] py-1"
-              >
-                {county.county}
-              </a>
-            ))}
-          </div>
-        </div>
-        
         {/* Bottom */}
-        <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-          <p className="mb-2">This website is for informational purposes. We are regulated by the Solicitors Regulation Authority. No Win No Fee arrangements are subject to eligibility.</p>
+        <div className="border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+          <p className="mb-2">This website is for informational purposes. No Win No Fee arrangements are subject to eligibility.</p>
           <p>© {new Date().getFullYear()} {SITE_CONFIG.domain.replace('https://', '')}. All rights reserved.</p>
         </div>
       </div>
@@ -1652,11 +1603,11 @@ export default function Home() {
             <div className="flex gap-2">
               <Button onClick={() => setLeadFormStep(2)} variant="outline" className="flex-1">Back</Button>
               <Button 
-                onClick={() => setLeadFormStep(4)} 
-                disabled={!formData.name || !formData.phone || !formData.email} 
+                onClick={handleLeadFormSubmit}
+                disabled={!formData.name || !formData.phone || !formData.email || isSubmitting} 
                 className="flex-1 bg-[#f59e0b] hover:bg-[#d97706]"
               >
-                Submit
+                {isSubmitting ? 'Submitting...' : 'Submit'}
               </Button>
             </div>
           </div>
@@ -1664,13 +1615,13 @@ export default function Home() {
         
         {leadFormStep === 4 && (
           <div className="text-center py-6">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg className="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-[#1a2744] mb-2">Thank You!</h3>
-            <p className="text-gray-600">We've received your enquiry. One of our child injury claims specialists will contact you within 24 hours.</p>
+            <h3 className="text-lg font-bold text-[#1a2744] mb-2">Thank You!</h3>
+            <p className="text-gray-600 text-sm">We've received your enquiry. We'll contact you within 24 hours.</p>
             <Button onClick={() => { setShowLeadForm(false); setLeadFormStep(1); }} className="mt-4 bg-[#f59e0b] hover:bg-[#d97706]">
               Close
             </Button>
@@ -1683,17 +1634,17 @@ export default function Home() {
   // Render Cookie Banner
   const renderCookieBanner = () => (
     mounted && showCookieBanner && (
-      <div className="fixed bottom-0 left-0 right-0 bg-[#1a2744] text-white p-4 z-50">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="fixed bottom-16 md:bottom-0 left-0 right-0 bg-[#1a2744] text-white p-3 z-50">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-sm">
-            We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.{' '}
+            We use cookies to enhance your experience.{' '}
             <a href="#cookies" onClick={() => navigateTo('cookies')} className="text-[#f59e0b] underline">Learn more</a>
           </p>
           <div className="flex gap-2">
-            <Button onClick={handleCookieDecline} variant="outline" className="border-white text-white hover:bg-white hover:text-[#1a2744]">
+            <Button onClick={handleCookieDecline} variant="outline" className="border-white text-white hover:bg-white hover:text-[#1a2744] text-sm">
               Decline
             </Button>
-            <Button onClick={handleCookieAccept} className="bg-[#f59e0b] hover:bg-[#d97706] text-white">
+            <Button onClick={handleCookieAccept} className="bg-[#f59e0b] hover:bg-[#d97706] text-white text-sm">
               Accept
             </Button>
           </div>
@@ -1706,16 +1657,11 @@ export default function Home() {
   const render404 = () => (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="text-center">
-        <h1 className="text-6xl font-bold text-[#1a2744] mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-8">Page not found</p>
-        <div className="flex flex-col gap-4">
-          <Button onClick={() => navigateTo('home')} className="bg-[#f59e0b] hover:bg-[#d97706] text-white">
-            Go to Homepage
-          </Button>
-          <Button onClick={() => navigateTo('home')} variant="outline" className="border-[#1a2744] text-[#1a2744]">
-            View Areas We Cover
-          </Button>
-        </div>
+        <h1 className="text-5xl font-bold text-[#1a2744] mb-4">404</h1>
+        <p className="text-lg text-gray-600 mb-6">Page not found</p>
+        <Button onClick={() => navigateTo('home')} className="bg-[#f59e0b] hover:bg-[#d97706] text-white">
+          Go to Homepage
+        </Button>
       </div>
     </div>
   )
@@ -1726,97 +1672,33 @@ export default function Home() {
     return (
       <>
         {renderBreadcrumbs()}
-        {renderHero(content.h1, 'Get in touch with our child injury claims team for a free, no-obligation assessment')}
-        {renderStatsBar()}
-        <section className="py-16 bg-white">
+        {renderHero(content.h1, 'Contact us for a free, no-obligation assessment')}
+        <section className="py-12 bg-white">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-              <div>
-                <h2 className="text-2xl font-bold text-[#1a2744] mb-6">Get In Touch</h2>
-                <p className="text-gray-600 mb-6">Complete the form below and one of our child injury claims specialists will contact you within 24 hours for a free, no-obligation assessment.</p>
-                
-                <div className="space-y-4">
-                  <div>
-                    <Label htmlFor="contact-name">Your Name</Label>
-                    <Input id="contact-name" placeholder="Enter your name" />
-                  </div>
-                  <div>
-                    <Label htmlFor="contact-phone">Phone Number</Label>
-                    <Input id="contact-phone" type="tel" placeholder="Enter your phone number" />
-                  </div>
-                  <div>
-                    <Label htmlFor="contact-email">Email</Label>
-                    <Input id="contact-email" type="email" placeholder="Enter your email" />
-                  </div>
-                  <div>
-                    <Label htmlFor="contact-message">Message</Label>
-                    <Textarea id="contact-message" placeholder="Tell us about your child's injury..." rows={4} />
-                  </div>
-                  <Button className="w-full bg-[#f59e0b] hover:bg-[#d97706] text-white py-6">
-                    Send Message
-                  </Button>
-                </div>
-              </div>
+            <div className="max-w-2xl mx-auto">
+              <h2 className="text-xl font-bold text-[#1a2744] mb-4">Get In Touch</h2>
+              <p className="text-gray-600 mb-6">Complete the form below and we'll contact you within 24 hours.</p>
               
-              <div>
-                <h2 className="text-2xl font-bold text-[#1a2744] mb-6">Contact Information</h2>
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#f59e0b] rounded-full flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-[#1a2744]">Phone</h3>
-                      <a href={`tel:${SITE_CONFIG.phone}`} className="text-[#f59e0b] hover:underline">{SITE_CONFIG.phone}</a>
-                      <p className="text-gray-500 text-sm">Mon-Fri 9am-6pm, Sat 10am-2pm</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#f59e0b] rounded-full flex items-center justify-center flex-shrink-0">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-[#1a2744]">Email</h3>
-                      <a href={`mailto:${SITE_CONFIG.email}`} className="text-[#f59e0b] hover:underline">{SITE_CONFIG.email}</a>
-                      <p className="text-gray-500 text-sm">We respond within 24 hours</p>
-                    </div>
-                  </div>
+              <div className="space-y-4">
+                <div>
+                  <Label htmlFor="contact-name">Your Name *</Label>
+                  <Input id="contact-name" placeholder="Enter your name" className="mt-1" />
                 </div>
-                
-                <div className="mt-8 p-6 bg-gray-50 rounded-lg">
-                  <h3 className="font-semibold text-[#1a2744] mb-2">Why Contact Us?</h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-center gap-2">
-                      <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      Free, no-obligation assessment
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      No win no fee available
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      98% success rate
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      100% confidential
-                    </li>
-                  </ul>
+                <div>
+                  <Label htmlFor="contact-phone">Phone Number *</Label>
+                  <Input id="contact-phone" type="tel" placeholder="Enter your phone number" className="mt-1" />
                 </div>
+                <div>
+                  <Label htmlFor="contact-email">Email *</Label>
+                  <Input id="contact-email" type="email" placeholder="Enter your email" className="mt-1" />
+                </div>
+                <div>
+                  <Label htmlFor="contact-message">Message</Label>
+                  <Textarea id="contact-message" placeholder="Tell us about your case..." rows={4} className="mt-1" />
+                </div>
+                <Button onClick={() => setShowLeadForm(true)} className="w-full bg-[#f59e0b] hover:bg-[#d97706] text-white py-5">
+                  Send Enquiry
+                </Button>
               </div>
             </div>
           </div>
@@ -1831,10 +1713,10 @@ export default function Home() {
     return (
       <>
         {renderBreadcrumbs()}
-        <section className="py-16 bg-white min-h-screen">
+        <section className="py-12 bg-white min-h-screen">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h1 className="text-3xl md:text-4xl font-bold text-[#1a2744] mb-8">{content.h1}</h1>
+            <div className="max-w-3xl mx-auto">
+              <h1 className="text-2xl md:text-3xl font-bold text-[#1a2744] mb-6">{content.h1}</h1>
               <div dangerouslySetInnerHTML={{ __html: content.content }} />
             </div>
           </div>
@@ -1850,14 +1732,12 @@ export default function Home() {
         const homeContent = getHomepageContent()
         return (
           <>
-            {renderHero(homeContent.h1, 'Expert solicitors helping families across the UK claim compensation for injured children. No win no fee, free assessment.')}
+            {renderHero(homeContent.h1, 'We help families across the UK claim compensation for injured children. No win no fee, free assessment.')}
             {renderStatsBar()}
             {homeContent.sections.map((section, i) => renderContentSection(section.h2, section.content, i))}
-            {renderHowItWorks()}
-            {renderCalculator()}
-            {renderFAQ(homeContent.sections)}
             {renderLocationGrid()}
             {renderTestimonials()}
+            {renderFAQ(homeContent.sections)}
           </>
         )
       
@@ -1866,12 +1746,11 @@ export default function Home() {
         return (
           <>
             {renderBreadcrumbs()}
-            {renderHero(countyContent.h1, `Expert child injury claims specialists serving ${page.county!.county}. No win no fee, free assessment.`, true, page.county!.county)}
+            {renderHero(countyContent.h1, `Child injury claims in ${page.county!.county}. No win no fee, free assessment.`)}
             {renderStatsBar()}
             {countyContent.sections.map((section, i) => renderContentSection(section.h2, section.content, i))}
             {renderTownLinks(page.county!)}
             {renderOtherCounties(page.county!)}
-            {renderLocationGrid()}
           </>
         )
       
@@ -1880,7 +1759,7 @@ export default function Home() {
         return (
           <>
             {renderBreadcrumbs()}
-            {renderHero(townContent.h1, `Expert child injury claims specialists in ${page.town!.name}, ${page.county!.county}. No win no fee, free assessment.`, true, page.town!.name)}
+            {renderHero(townContent.h1, `Child injury claims in ${page.town!.name}, ${page.county!.county}. No win no fee.`)}
             {renderStatsBar()}
             {townContent.sections.map((section, i) => renderContentSection(section.h2, section.content, i))}
             {renderNearbyTowns(page.county!, page.town!)}
@@ -1909,25 +1788,23 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-white">
       {renderHeader()}
       <main className="flex-grow">
-        {renderPage()}
+        <div className="lg:mr-[340px]">
+          {renderPage()}
+        </div>
       </main>
       {renderFooter()}
+      {renderStickySidebar()}
       {renderLeadFormModal()}
       {renderCookieBanner()}
       
-      {/* Mobile Sticky Bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t p-2 z-40" style={{ bottom: (mounted && showCookieBanner) ? '80px' : '0' }}>
-        <div className="flex gap-2">
-          <a href={`tel:${SITE_CONFIG.phone}`} className="flex-1">
-            <Button className="w-full bg-[#1a2744] hover:bg-[#2d3e5f] text-white">
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              Call Now
-            </Button>
-          </a>
-          <Button onClick={() => setShowLeadForm(true)} className="flex-1 bg-[#f59e0b] hover:bg-[#d97706] text-white">
-            Start Claim
+      {/* Sticky "Make an Enquiry" Button - Bottom */}
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-40 p-3" style={{ bottom: mounted && showCookieBanner ? '60px' : '0' }}>
+        <div className="container mx-auto">
+          <Button 
+            onClick={() => setShowLeadForm(true)}
+            className="w-full md:w-auto md:float-right bg-[#f59e0b] hover:bg-[#d97706] text-white py-4 px-8 text-lg font-semibold"
+          >
+            Make an Enquiry
           </Button>
         </div>
       </div>
