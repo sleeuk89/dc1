@@ -1477,7 +1477,7 @@ export default function Home() {
   const renderFooter = () => (
     <footer className="bg-[#1a2744] text-white py-10">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-6 mb-6">
+        <div className="grid md:grid-cols-3 gap-6 mb-6">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-3">
@@ -1501,14 +1501,6 @@ export default function Home() {
               <a href="#privacy" onClick={() => navigateTo('privacy')} className="text-gray-400 hover:text-[#f59e0b] text-sm">Privacy Policy</a>
               <a href="#cookies" onClick={() => navigateTo('cookies')} className="text-gray-400 hover:text-[#f59e0b] text-sm">Cookie Policy</a>
             </nav>
-          </div>
-          
-          {/* Contact */}
-          <div>
-            <h3 className="font-bold mb-3">Contact</h3>
-            <div className="flex flex-col gap-2 text-gray-400 text-sm">
-              <a href={`mailto:${SITE_CONFIG.email}`} className="hover:text-[#f59e0b]">{SITE_CONFIG.email}</a>
-            </div>
           </div>
           
           {/* Counties */}
