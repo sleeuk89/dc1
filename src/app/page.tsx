@@ -787,20 +787,12 @@ const getCookiesContent = () => ({
 // ============================================================================
 
 export default function Home() {
-  // Initialize hash from window
-  const [currentPath, setCurrentPath] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return window.location.hash.slice(1) || '/'
-    }
-    return '/'
-  })
-  // Initialize cookie banner visibility
-  const [showCookieBanner, setShowCookieBanner] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return !localStorage.getItem('cookieConsent')
-    }
-    return false
-  })
+  // Track if component is mounted (for hydration safety)
+  const [mounted, setMounted] = useState(false)
+  
+  // Initialize with simple values for SSR consistency
+  const [currentPath, setCurrentPath] = useState('/')
+  const [showCookieBanner, setShowCookieBanner] = useState(false)
   const [showLeadForm, setShowLeadForm] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -819,8 +811,20 @@ export default function Home() {
   const [calcSeverity, setCalcSeverity] = useState('')
   const [calcResult, setCalcResult] = useState('')
 
-  // Initialize - hash change listener only
+  // Initialize on mount (after hydration)
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- Required for hydration safety
+    setMounted(true)
+    
+    // Set initial values from window
+    const hash = window.location.hash.slice(1) || '/'
+    setCurrentPath(hash)
+    
+    // Check cookie consent
+    const cookieConsent = localStorage.getItem('cookieConsent')
+    setShowCookieBanner(!cookieConsent)
+    
+    // Hash change listener
     const handleHashChange = () => {
       const newHash = window.location.hash.slice(1) || '/'
       setCurrentPath(newHash)
@@ -1678,7 +1682,7 @@ export default function Home() {
 
   // Render Cookie Banner
   const renderCookieBanner = () => (
-    showCookieBanner && (
+    mounted && showCookieBanner && (
       <div className="fixed bottom-0 left-0 right-0 bg-[#1a2744] text-white p-4 z-50">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm">
@@ -1912,7 +1916,7 @@ export default function Home() {
       {renderCookieBanner()}
       
       {/* Mobile Sticky Bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t p-2 z-40" style={{ bottom: showCookieBanner ? '80px' : '0' }}>
+      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t p-2 z-40" style={{ bottom: (mounted && showCookieBanner) ? '80px' : '0' }}>
         <div className="flex gap-2">
           <a href={`tel:${SITE_CONFIG.phone}`} className="flex-1">
             <Button className="w-full bg-[#1a2744] hover:bg-[#2d3e5f] text-white">
