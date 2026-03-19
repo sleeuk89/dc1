@@ -83,7 +83,7 @@ Website: childinjuryclaims.co.uk
       console.log('Formsubmit.co failed, trying backup...')
     }
 
-    // Backup: Try Formspree.io (another free form service)
+    // Backup: Try Formspree.io (your form: https://formspree.io/f/xyknozda)
     try {
       const formspreeData = new URLSearchParams()
       formspreeData.append('name', name)
@@ -92,7 +92,7 @@ Website: childinjuryclaims.co.uk
       formspreeData.append('message', emailMessage)
       formspreeData.append('_subject', emailSubject)
 
-      const formspreeResponse = await fetch('https://formspree.io/f/xnnnnnnn', {
+      const formspreeResponse = await fetch('https://formspree.io/f/xyknozda', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -102,7 +102,7 @@ Website: childinjuryclaims.co.uk
       })
 
       if (formspreeResponse.ok) {
-        console.log('✅ Email sent successfully via Formspree')
+        console.log('✅ Email sent successfully via Formspree to sleeuk89@gmail.com')
         return NextResponse.json({
           success: true,
           message: 'Thank you! Your enquiry has been submitted. We will contact you within 24 hours.'
