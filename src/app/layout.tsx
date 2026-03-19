@@ -14,24 +14,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
+  title: "Child Injury Claims - No Win No Fee Compensation UK",
+  description: "Expert child injury claims help across the UK. No win no fee compensation claims for injured children. Free assessment, 98% success rate.",
+  keywords: ["child injury claims", "child compensation", "injury claims UK", "no win no fee", "child accident claim"],
+  authors: [{ name: "Child Injury Claims" }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: "/favicon.png",
   },
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "Child Injury Claims - No Win No Fee Compensation UK",
+    description: "Expert child injury claims help across the UK. No win no fee, free assessment.",
+    url: "https://childinjuryclaims.co.uk",
+    siteName: "Child Injury Claims",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
+    title: "Child Injury Claims - No Win No Fee Compensation UK",
+    description: "Expert child injury claims help across the UK. No win no fee, free assessment.",
   },
 };
 
@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en-GB" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >

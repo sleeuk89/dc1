@@ -597,11 +597,18 @@ const getHomepageContent = () => ({
 
 // Location page content generator
 const getLocationPageContent = (location: string, isCounty: boolean, countyData?: typeof locationData[0], townData?: { name: string; slug: string; postcode: string }) => {
-  const countyLink = isCounty 
-    ? `<a href="#near-me/${countyData?.slug || ''}" class="text-[#f59e0b] underline font-medium">${location}</a>`
-    : `<a href="#near-me/${countyData?.slug || ''}" class="text-[#f59e0b] underline font-medium">${countyData?.county || ''}</a>`
-  
+  // Main keyword link to homepage
   const mainKeywordLink = `<a href="#home" class="text-[#f59e0b] underline font-medium">child injury claims</a>`
+  
+  // Current location link (for county pages, link to self; for town pages, link to town page)
+  const locationLink = isCounty 
+    ? `<a href="#near-me/${countyData?.slug || ''}" class="text-[#f59e0b] underline font-medium">child injury claims in ${location}</a>`
+    : `<a href="#near-me/${countyData?.slug}-${townData?.slug}" class="text-[#f59e0b] underline font-medium">child injury claims in ${location}</a>`
+  
+  // County link (for town pages, link to parent county)
+  const countyLink = !isCounty 
+    ? `<a href="#near-me/${countyData?.slug}" class="text-[#f59e0b] underline font-medium">child injury claims in ${countyData?.county}</a>`
+    : ''
 
   return {
     title: isCounty 
@@ -616,14 +623,14 @@ const getLocationPageContent = (location: string, isCounty: boolean, countyData?
         h2: `Who Can Make A Child Injury Claim in ${location}?`,
         content: [
           `${mainKeywordLink} in ${location} can be made by any person injured due to another party's negligence or breach of duty. Eligible claimants include children injured at school, in public places, on the road, or due to medical negligence. Parents or guardians can submit claims on behalf of children under 18.`,
-          `Claims on behalf of children in ${location} must be submitted by a parent or legal guardian acting as litigation friend. Legal responsibility is established through negligence or breach of statutory duty. ${isCounty ? `We cover all areas within ${location}` : `As part of ${countyData?.county}, ${location} claims`} follow the same legal principles as elsewhere in the UK.`,
+          `Claims on behalf of children in ${location} must be submitted by a parent or legal guardian acting as litigation friend. ${locationLink} follow the same legal principles as elsewhere in the UK, with legal responsibility established through negligence or breach of statutory duty. ${isCounty ? `We cover all areas within ${location}` : `As part of ${countyData?.county}, ${location} claims`} are handled with care and attention to detail.`,
           `Evidence such as medical records, witness statements, incident reports, and proof of negligence helps establish the claim. The three-year limitation period does not begin until the child reaches 18. Claims can be referred to appropriate legal representation for assessment and processing.`
         ]
       },
       {
         h2: `How Much Compensation Can I Claim For A Child Injury in ${location}?`,
         content: [
-          `Child injury claims in ${location} can result in compensation ranging from £1,000 for minor injuries to over £500,000 for severe cases under UK personal injury law. Compensation is assessed based on the Judicial College Guidelines and includes general damages and special damages.`,
+          `${locationLink} can result in compensation ranging from £1,000 for minor injuries to over £500,000 for severe cases under UK personal injury law. Compensation is assessed based on the Judicial College Guidelines and includes general damages and special damages.`,
           `Factors affecting potential compensation include the severity of the injury, any permanent disability or scarring, psychological impact, effect on education and future prospects, and financial losses incurred. ${isCounty ? `Cases in ${location}` : `Cases in ${location} and throughout ${countyData?.county}`} are assessed on their individual merits.`,
           `We operate on a No-Win, No-Fee basis, subject to a success fee and insurance costs where applicable. No-Win, No-Fee means you only pay if your claim is successful. If successful, a success fee (capped at 25% of damages) plus any agreed insurance costs may be deducted. Contact us in ${location} to get an estimate of your compensation.`
         ]
@@ -639,15 +646,15 @@ const getLocationPageContent = (location: string, isCounty: boolean, countyData?
       {
         h2: `How Do I Start A Child Injury Claim in ${location}?`,
         content: [
-          `${mainKeywordLink} involve proving that another party was negligent or breached statutory obligations. Relevant evidence includes medical records, injury photographs, witness statements, school or incident reports, and any correspondence with the responsible party.`,
+          `${locationLink} involve proving that another party was negligent or breached statutory obligations. Relevant evidence includes medical records, injury photographs, witness statements, school or incident reports, and any correspondence with the responsible party.`,
           `The process begins with gathering evidence and assessing liability. A letter of claim is then sent to the responsible party or their insurers. ${isCounty ? `In ${location}` : `In ${location}, ${countyData?.county}`}, cases can be referred for assessment, with evidence reviewed to determine fault and calculate damages.`,
-          `We facilitate access to No-Win, No-Fee legal representation for claims in ${location}. The process includes evidence gathering, liability assessment, negotiation with insurers, and if necessary, court proceedings. Compensation is sought through settlement or court action depending on circumstances.`
+          `We facilitate access to No-Win, No-Fee legal representation for ${mainKeywordLink} in ${location}. The process includes evidence gathering, liability assessment, negotiation with insurers, and if necessary, court proceedings. Compensation is sought through settlement or court action depending on circumstances.`
         ]
       },
       {
         h2: `How Long Do I Have To Make A Child Injury Claim in ${location}?`,
         content: [
-          `Child injury claims in ${location} are subject to a three-year limitation period starting from the date of injury. Where the injured party is under 18, the time limit begins on their 18th birthday and ends when they turn 21. This extended period recognises that children cannot be expected to understand their rights.`,
+          `${locationLink} are subject to a three-year limitation period starting from the date of injury. Where the injured party is under 18, the time limit begins on their 18th birthday and ends when they turn 21. This extended period recognises that children cannot be expected to understand their rights.`,
           `Claims made on behalf of someone without mental capacity have no time restriction unless capacity is regained. However, it is advisable to pursue claims promptly whilst evidence is fresh and witnesses can be located. Early action typically leads to stronger cases and better outcomes.`,
           `${isCounty ? `For claims in ${location}` : `For claims in ${location} and ${countyData?.county}`}, parents or guardians should seek assessment as soon as possible after an incident. This ensures evidence is preserved and the child's interests are protected throughout the process.`
         ]
@@ -655,15 +662,15 @@ const getLocationPageContent = (location: string, isCounty: boolean, countyData?
       {
         h2: `What Evidence Is Needed For A Child Injury Claim in ${location}?`,
         content: [
-          `Child injury claims in ${location} require proof of injury and the responsible party's breach of legal duty. Liability is established through negligence or breach of statutory duty, supported by comprehensive documentation of the incident and its consequences.`,
+          `${locationLink} require proof of injury and the responsible party's breach of legal duty. Liability is established through negligence or breach of statutory duty, supported by comprehensive documentation of the incident and its consequences.`,
           `Essential evidence includes injury documentation such as hospital and GP reports, photographs of wounds taken immediately after the incident, eyewitness statements that corroborate the event, evidence of prior incidents or complaints, employment records for parents showing wage loss, and treatment receipts for therapy or rehabilitation.`,
-          `Providing comprehensive evidence helps support the assessment of the claim and ensures appropriate compensation is calculated. ${isCounty ? `In ${location}` : `In ${location}, ${countyData?.county}`}, we can guide families through the evidence-gathering process to build the strongest possible case.`
+          `Providing comprehensive evidence helps support the assessment of ${mainKeywordLink} and ensures appropriate compensation is calculated. ${isCounty ? `In ${location}` : `In ${location}, ${countyData?.county}`}, we can guide families through the evidence-gathering process to build the strongest possible case.`
         ]
       },
       {
         h2: `How Long Does A Child Injury Claim Take To Settle in ${location}?`,
         content: [
-          `Child injury claims in ${location} typically settle within 6 to 18 months when liability is admitted and medical evidence is complete. Complex cases involving serious injury or court proceedings can take over 24 months, particularly if the full extent of injuries needs to be assessed over time.`,
+          `${locationLink} typically settle within 6 to 18 months when liability is admitted and medical evidence is complete. Complex cases involving serious injury or court proceedings can take over 24 months, particularly if the full extent of injuries needs to be assessed over time.`,
           `For children with ongoing medical needs, it may be necessary to wait until their condition has stabilised before finalising settlement. This ensures all future care requirements and their impact on the child's life are properly accounted for in the compensation awarded.`,
           `Claims involving urgent medical costs may qualify for interim payments before full settlement. ${isCounty ? `In ${location}` : `In ${location} and throughout ${countyData?.county}`}, interim payments can help families access treatment and support whilst the claim is ongoing.`
         ]
@@ -671,7 +678,7 @@ const getLocationPageContent = (location: string, isCounty: boolean, countyData?
       {
         h2: `Can I Claim If The Responsible Party Is Unknown Or Uninsured?`,
         content: [
-          `Child injury claims are still possible if the responsible party is unknown or uninsured. In road traffic accident cases, compensation may be pursued through the Motor Insurers' Bureau (MIB) which provides a scheme for victims of uninsured or hit-and-run drivers.`,
+          `${mainKeywordLink} are still possible if the responsible party is unknown or uninsured. In road traffic accident cases, compensation may be pursued through the Motor Insurers' Bureau (MIB) which provides a scheme for victims of uninsured or hit-and-run drivers.`,
           `For incidents in public places or involving unidentified parties, claims can sometimes be pursued through local authorities, public liability insurance, or other statutory schemes. Evidence such as police reports and witness statements become particularly important in these circumstances.`,
           `Claims in ${location} involving unidentified parties must establish liability through available evidence and appropriate legal mechanisms. Compensation amounts depend on individual circumstances. Not all claims will succeed, but an assessment can determine the viability of pursuing compensation.`
         ]
@@ -679,17 +686,17 @@ const getLocationPageContent = (location: string, isCounty: boolean, countyData?
       {
         h2: `Local Support For Child Injury Claims in ${location}`,
         content: [
-          `Families in ${location} pursuing child injury claims can access support throughout the claims process. ${isCounty ? `Across ${location}` : `In ${location} and ${countyData?.county}`}, we help gather evidence, assess liability, calculate compensation, and manage the entire process from initial enquiry to final settlement.`,
-          `Local knowledge and understanding of ${isCounty ? `${location}` : `${countyData?.county} and ${location}`} can be valuable in building a case. We can help identify relevant local facilities for medical assessments and ensure all evidence is properly documented and preserved.`,
+          `Families in ${location} pursuing ${mainKeywordLink} can access support throughout the claims process. ${isCounty ? `Across ${location}` : `In ${location} and ${countyData?.county}`}, we help gather evidence, assess liability, calculate compensation, and manage the entire process from initial enquiry to final settlement.`,
+          `Local knowledge and understanding of ${isCounty ? `${location}` : `${countyData?.county} and ${location}`} can be valuable in building a case. ${isCounty ? countyLink : ''} We can help identify relevant local facilities for medical assessments and ensure all evidence is properly documented and preserved.`,
           `Contact us for a free, no-obligation case assessment to discuss your child's injury and potential claim. We can provide guidance on the process, likely timescales, and potential compensation based on the specific circumstances of your case.`
         ]
       },
       {
         h2: `Other Areas We Cover Near ${location}`,
         content: [
-          `In addition to ${location}, we provide ${mainKeywordLink} services across the entire United Kingdom. ${isCounty ? `Within ${location}, we cover all major towns and communities` : `In ${countyData?.county} and surrounding areas, we serve clients in multiple locations`}. Our national coverage ensures families can access help regardless of where the incident occurred.`,
+          `In addition to ${location}, we provide ${mainKeywordLink} services across the entire United Kingdom. ${isCounty ? `Within ${location}, we cover all major towns and communities` : `In ${countyData?.county} and surrounding areas, we serve clients in multiple locations including ${countyLink}`}. Our national coverage ensures families can access help regardless of where the incident occurred.`,
           `${isCounty ? `From ${location}, we also serve neighbouring counties` : `Other areas near ${location} in ${countyData?.county} are also covered by our service`}. Our team can handle claims from any location in the UK, providing consistent support and guidance throughout the claims process.`,
-          `Whether the incident occurred locally or elsewhere, we can help. Use the areas covered section below to find your location, or contact us directly for a free assessment of your child injury claim.`
+          `Whether the incident occurred locally or elsewhere, we can help. Use the areas covered section below to find your location, or contact us directly for a free assessment of your ${locationLink.includes('child injury claims') ? 'claim' : 'child injury claim'}.`
         ]
       }
     ]
